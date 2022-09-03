@@ -55,7 +55,7 @@ EnvMods.clouds(positionX, positionY, positionZ, scaleX, scaleY, scaleZ)
 * scaleZ = number
 
 # object statments
-###water
+### water
 ```ts
 import * as EnvModder from './node_modules/envmods/index.ts'
 
