@@ -4,18 +4,16 @@ Welcome to EnvMods!  This is an awesome package for (mostly) environment ReMappe
 
 This package is meant to be used with [ReMapper](https://github.com/Swifter1243/ReMapper)
 
-# importing
-So I'm to stupid to make a deno moduel so you will be importing from github, the bright side is you dont have to install!
-
-In order to import for all functions add this to the top of your code
+# installing
+so im too stupid to make a deno moduel so.. npm!... ... ... anyways in order to install run this in your map directory terminal:
 ```ts
-import * as EnvMods from 'https://raw.githubusercontent.com/Splashcard04/EnvMods/main/EnvMods/index.ts';
+$ npm install envmodder
 ```
-your file should have (at least) these two imports
+that should download the files for you, now to import add this to your imports list
 ```ts
-import {ModelScene, Difficulty, ENV, Environment } from "https://deno.land/x/remapper@2.1.0/src/mod.ts"; //the classes don't matter
-import * as EnvMods from 'https://raw.githubusercontent.com/Splashcard04/EnvMods/main/EnvMods/index.ts';
+import * as EnvModder from './node_modules/envmods/index.ts'
 ```
+and that should do it for install, up next are the functions
 
 # Environment functions
 ### despawn
@@ -30,7 +28,7 @@ Despwan is extremely simple, it just takes the entirety of the bts environment a
 ### sun
 
 ```ts
-import * as EnvMods from 'https://raw.githubusercontent.com/Splashcard04/EnvMods/main/EnvMods/index.ts';
+import * as EnvModder from './node_modules/envmods/index.ts'
 
 EnvMods.sun(positionX, positionY, positionZ, scale, lightID)
 ```
