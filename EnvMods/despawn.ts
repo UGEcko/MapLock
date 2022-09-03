@@ -30,7 +30,7 @@ export function despawn(enviro: string) {
             enviro = "HalloweenEnvironment.[0]Environment"
     }
 
-    const env = new remapper.Environment(enviro, "Contains")
+    const env = new remapper.Environment((enviro), "Contains")
     env.position = [-69420, -69420, -69420];
     env.push();
 }
