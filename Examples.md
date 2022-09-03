@@ -27,7 +27,7 @@ EnvMods.despawn()
 Despwan is extremely simple, it just takes the entirety of the bts environment and moves it way out of the player's sight, essentially despawning the environment
 (currently only works for BTS environment BUT an update is planned allowing for selection of environments)
 
-###sun
+### sun
 
 ```ts
 import * as EnvMods from 'https://raw.githubusercontent.com/Splashcard04/EnvMods/main/EnvMods/index.ts';
@@ -42,7 +42,7 @@ EnvMods.sun(positionX, positionY, positionZ, scale, lightID)
 * scale = number
 * lightID = integer
 
-###clouds
+### clouds
 ```ts
 import * as EnvMods from 'https://raw.githubusercontent.com/Splashcard04/EnvMods/main/EnvMods/index.ts';
 
