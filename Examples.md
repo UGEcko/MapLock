@@ -18,7 +18,7 @@ and that should do it for install, up next are the functions
 # Environment functions
 ### despawn
 ```ts
-import * as EnvMods from 'https://raw.githubusercontent.com/Splashcard04/EnvMods/main/EnvMods/index.ts';
+import * as EnvModder from './node_modules/envmods/index.ts'
 
 EnvMods.despawn()
 ```
@@ -42,7 +42,7 @@ EnvMods.sun(positionX, positionY, positionZ, scale, lightID)
 
 ### clouds
 ```ts
-import * as EnvMods from 'https://raw.githubusercontent.com/Splashcard04/EnvMods/main/EnvMods/index.ts';
+import * as EnvModder from './node_modules/envmods/index.ts'
 
 EnvMods.clouds(positionX, positionY, positionZ, scaleX, scaleY, scaleZ)
 ```
@@ -55,3 +55,14 @@ EnvMods.clouds(positionX, positionY, positionZ, scaleX, scaleY, scaleZ)
 * scaleZ = number
 
 # object statments
+###water
+```ts
+import * as EnvModder from './node_modules/envmods/index.ts'
+
+EnvModder.water(time, duration, y level)
+```
+This is pretty self explanitory, it makes a massive lake/ocean so you can be like every other basic noodle mapper who uses copies swifter instead of making your own legitemate thing :)
+time = number
+duration = number
+y level = number
+
