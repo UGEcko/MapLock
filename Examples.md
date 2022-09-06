@@ -68,3 +68,32 @@ time = number
 duration = number
 y level = number
 
+### give notes track
+```ts
+import * as EnvModder from './node_moduels/envmods/index.ts'
+
+EnvModder.giveNotesTrack(startTime, duration, track)
+```
+This is also pretty self explanatory, gives the notes between the selected times a track already animated,
+startTime = number
+duration = number
+track = string
+### player movment
+```ts
+import * as EnvModder from './node_moduels/envmods/index.ts'
+
+EnvModder.playerMove(StartBeat, duration, startX, endX, startY, endY, startZ, endZ)
+```
+This will move the player, but the exiting part is - no extra parent track needed - this will move the player and the notes together!
+* StartBeat = number
+* duration = number
+* startX = number
+* endX = number
+* startY = number
+* endY = number
+* startZ = number
+* endZ = number
+
+## More updates soon :)
+
+
