@@ -30,29 +30,31 @@ Despwan is extremely simple, it just takes the entirety of the bts environment a
 ```ts
 import * as EnvModder from './node_modules/envmods/index.ts'
 
-EnvMods.sun(positionX, positionY, positionZ, scale, lightID)
+EnvMods.sun(positionX, positionY, positionZ, scale, lightID, uses)
 ```
 
-`sun()` will unfortunately only work in BTS environment :(... Anyways this will use `GlowLineH$` to make a sun effect with customizable scale and position, 
+`sun()` will unfortunately only work in BTS environment :(... Anyways this will use `GlowLineH$` to make a sun effect with customizable scale and position, the uses category will allow this to be duped multiple times, __*NEVER make this 0*__
 * positionX = number
 * positionY = number
 * positionZ = number
 * scale = number
 * lightID = integer
+* uses = integer
 
 ### clouds
 ```ts
 import * as EnvModder from './node_modules/envmods/index.ts'
 
-EnvMods.clouds(positionX, positionY, positionZ, scaleX, scaleY, scaleZ)
+EnvMods.clouds(positionX, positionY, positionZ, scaleX, scaleY, scaleZ, uses)
 ```
-`clouds()` is really just a dumb way to make clouds tbh but it does make it easier and shorter ig (if you're wondering why there's no rotation its because cloud rotation just gets really buggy and stuff.
+`clouds()` is really just a dumb way to make clouds tbh but it does make it easier and shorter ig (if you're wondering why there's no rotation its because cloud rotation just gets really buggy and stuff)  Uses is the ammount of times you used this __*never make this 0*__
 * positionX = number
 * positionY = number
 * positionZ = number
 * scaleX = number
 * scaleY = number
 * scaleZ = number
+* uses = integer
 
 # object statments
 ### water
