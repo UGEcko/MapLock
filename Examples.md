@@ -5,13 +5,17 @@ Welcome to EnvMods!  This is an awesome package for (mostly) environment ReMappe
 This package is meant to be used with [ReMapper](https://github.com/Swifter1243/ReMapper)
 
 # installing
-so im too stupid to make a deno moduel so.. npm!... ... ... anyways in order to install run this in your map directory terminal:
+ in order to install run this in your map directory terminal:
 ```ts
-$ npm install envmodder
+$ deno install --allow-all -f --reload https://raw.githubusercontent.com/Splashcard04/EnvMods/main/setup/EnvMods_setup.ts
+```
+then just run 
+```ts
+$ EnvMods_setup
 ```
 that should download the files for you, now to import add this to your imports list
 ```ts
-import * as EnvModder from './node_modules/envmods/index.ts'
+import * as EnvModder from './EnvMods/index.ts'
 ```
 and that should do it for install, up next are the functions
 
