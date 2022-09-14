@@ -3,10 +3,11 @@ import * as remapper from "https://deno.land/x/remapper@2.1.0/src/mod.ts"
 // i forgor how to use cases so you get this inneficient thing now
 /**
  * @param ID
+ * @param lookupmethod
  * @author splashcard__
  */
 
-export function despawn(ID: string) { 
+export function despawn(ID: string, lookupmethod: string) { 
     switch(ID) {
         case "bts":
             ID = "BTSEnvironment.[0]Environment"
@@ -15,7 +16,7 @@ export function despawn(ID: string) {
             ID = "BillieEnvironment.[0]Environment"
     }
 
-    const env = new remapper.Environment(`${ID}`, "Contains");
+    const env = new remapper.Environment(`${ID}`, `${lookupmethod}`);
     env.position = [-69420, -69420, -69420];
     env.push();
 }
