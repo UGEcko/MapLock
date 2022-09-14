@@ -98,5 +98,14 @@ This will move the player, but the exiting part is - no extra parent track neede
 * startZ = number
 * endZ = number
 ### giveNotesTrack
+```ts
+import * as EnvModder from './Envmods/index.ts'
+
+EnvModder.giveNotesTrack(startbeat, duration, "track name")
+```
+`giveNotesTrack` will give a selection of notes (from start beat to end beat) a track of your choosing
+* start beat: number
+* duration: number
+* track name: string
 
 
