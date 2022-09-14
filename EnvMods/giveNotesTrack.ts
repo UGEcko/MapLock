@@ -10,7 +10,7 @@ import * as remapper from "https://deno.land/x/remapper@2.1.0/src/mod.ts"
 export function giveNotesTrack(time: number, dur: number, track: string) {
      remapper.notesBetween(time, dur, (note) => {
         note.customData = {
-         _track: track
+         _track: `${track}`
         }
    });
 }
