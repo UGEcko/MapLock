@@ -27,7 +27,7 @@ import * as EnvModder from './node_modules/envmods/index.ts'
 EnvMods.despawn()
 ```
 Despwan is extremely simple, it just takes the entirety of the bts environment and moves it way out of the player's sight, essentially despawning the environment
-(currently only works for BTS environment BUT an update is planned allowing for selection of environments)
+despwan() has two constants for environments `"bts"` or `"billie"` removing the entirety of their respective environments, you can also use your own custom ids and different lookup methods if you so desire, `"bts"` and `"billie"` will only work with contains.
 
 ### sun
 
