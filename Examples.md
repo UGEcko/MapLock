@@ -22,7 +22,7 @@ and that should do it for install, up next are the functions
 # Environment functions
 ### despawn
 ```ts
-import * as EnvModder from './node_modules/envmods/index.ts'
+import * as EnvModder from './EnvMods/index.ts'
 
 EnvMods.despawn()
 ```
@@ -32,7 +32,7 @@ despwan() has two constants for environments `"bts"` or `"billie"` removing the 
 ### sun
 
 ```ts
-import * as EnvModder from './node_modules/envmods/index.ts'
+import * as EnvModder from './EnvMods/index.ts'
 
 EnvMods.sun(positionX, positionY, positionZ, scale, lightID, uses)
 ```
@@ -47,7 +47,7 @@ EnvMods.sun(positionX, positionY, positionZ, scale, lightID, uses)
 
 ### clouds
 ```ts
-import * as EnvModder from './node_modules/envmods/index.ts'
+import * as EnvModder from './EnvMods/index.ts'
 
 EnvMods.clouds(positionX, positionY, positionZ, scaleX, scaleY, scaleZ, uses)
 ```
@@ -63,7 +63,7 @@ EnvMods.clouds(positionX, positionY, positionZ, scaleX, scaleY, scaleZ, uses)
 # object statments
 ### water
 ```ts
-import * as EnvModder from './node_modules/envmods/index.ts'
+import * as EnvModder from './EnvMods/index.ts'
 
 EnvModder.water(time, duration, y level)
 ```
@@ -74,7 +74,7 @@ y level = number
 
 ### give notes track
 ```ts
-import * as EnvModder from './node_moduels/envmods/index.ts'
+import * as EnvModder from './EnvMods/index.ts'
 
 EnvModder.giveNotesTrack(startTime, duration, track)
 ```
@@ -84,7 +84,7 @@ duration = number
 track = string
 ### player movment
 ```ts
-import * as EnvModder from './node_moduels/envmods/index.ts'
+import * as EnvModder from './EnvMods/index.ts'
 
 EnvModder.playerMove(StartBeat, duration, startX, endX, startY, endY, startZ, endZ)
 ```
@@ -97,7 +97,6 @@ This will move the player, but the exiting part is - no extra parent track neede
 * endY = number
 * startZ = number
 * endZ = number
-
-## More updates soon :)
+### giveNotesTrack
 
 
