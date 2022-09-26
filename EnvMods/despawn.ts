@@ -1,6 +1,4 @@
 import * as remapper from "https://deno.land/x/remapper@2.1.0/src/mod.ts"
-
-// i forgor how to use cases so you get this inneficient thing now
 /**
  * @param ID
  * @param lookupmethod
@@ -14,6 +12,9 @@ export function despawn(ID: string, lookupmethod: string) {
             break
         case "billie":
             ID = "BillieEnvironment.[0]Environment"
+        case "spooky":
+            ID = "HalloweenEnvironment.[0]Environment"
+        //let lookupmethod = "Contains"
     }
 
     const env = new remapper.Environment(`${ID}`, `${lookupmethod}`);
