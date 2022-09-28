@@ -17,7 +17,7 @@ export function despawn(ID: string, lookupmethod: string) {
         //let lookupmethod = "Contains"
     }
 
-    const env = new remapper.Environment(`${ID}`, `${lookupmethod}`);
+    const env = new remapper.Environment(`${ID}`, lookupmethod)
     env.position = [-69420, -69420, -69420];
     env.push();
 }
