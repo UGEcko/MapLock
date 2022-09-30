@@ -117,6 +117,6 @@ EnvModder.giveNotesTrack(startbeat, duration, "track name")
 * track name: string
 
 ### laserfeild
-laserfeild is not currently in the package because it is still in testing
+laserfeild is not currently in the package because it is still in testing but you can still copy it from the src code (it's kinda unstable)
 
 
