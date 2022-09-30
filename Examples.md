@@ -24,7 +24,7 @@ and that should do it for install, up next are the functions
 ```ts
 import * as EnvModder from './EnvMods/index.ts'
 
-EnvMods.despawn()
+EnvMods.despawn("bts", "Contains")
 ```
 Despwan is extremely simple, it just takes the entirety of the bts environment and moves it way out of the player's sight, essentially despawning the environment
 despwan() has two constants for environments `"bts"` or `"billie"` removing the entirety of their respective environments, you can also use your own custom ids and different lookup methods if you so desire, `"bts"` and `"billie"` will only work with contains.
@@ -66,6 +66,14 @@ EnvMods.clouds(positionX, positionY, positionZ, scaleX, scaleY, scaleZ, uses)
 import * as EnvModder from './EnvMods/index.ts'
 
 EnvModder.water(time, duration, y level)
+```
+or
+```ts
+const water = new EnvModder.water()
+water.time = 69;
+water.duration = 420;
+water.y = -1.5
+water.push();
 ```
 This is pretty self explanitory, it makes a massive lake/ocean so you can be like every other basic noodle mapper who uses copies swifter instead of making your own legitemate thing :)
 time = number
