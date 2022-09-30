@@ -7,11 +7,11 @@ This package is meant to be used with [ReMapper](https://github.com/Swifter1243/
 # installing
  in order to install run this in your map directory terminal:
 ```ts
-$ deno install --allow-all -f --reload https://raw.githubusercontent.com/Splashcard04/EnvMods/main/setup/EnvMods_setup.ts
+deno install --allow-all -f --reload https://raw.githubusercontent.com/Splashcard04/EnvMods/main/setup/EnvMods_setup.ts
 ```
 then just run 
 ```ts
-$ EnvMods_setup
+EnvMods_setup
 ```
 that should download the files for you, now to import add this to your imports list
 ```ts
