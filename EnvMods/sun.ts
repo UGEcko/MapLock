@@ -13,7 +13,7 @@ import * as remapper from "https://deno.land/x/remapper@2.1.0/src/mod.ts"
 export function sun(posX: number, posY: number, posZ: number, scale: number, lightID : number, uses: number) {
     const sun = new remapper.Environment("GlowLineH$", "Regex")
     sun.position = [posX, posY, posZ];
-    sun.scale = [scale, scale + 5, scale];
+    sun.scale = [scale, scale + 0.5, scale];
     sun.lightID = lightID;
     sun.duplicate = uses;
     sun.push();
