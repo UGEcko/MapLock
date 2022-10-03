@@ -3,10 +3,10 @@ import * as remapper from "https://deno.land/x/remapper@2.1.0/src/mod.ts"
 /**
  * @param time
  * @param dur
- * @param y
+ * @param posY
  */
 
-export function water(time: number, dur: number, y: number) {
+export function water(time: number, duration: number, posY: number) {
     const wall = new remapper.Wall(time, dur, 1, 0, 0);
         wall.color = [0, 1.2, 3, 10],
         wall.fake = true;
