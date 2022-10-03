@@ -1,0 +1,10 @@
+
+    "include": [
+        "**/*.ts"
+    ],
+    "exclude": [
+        "coverage/**",
+        "node_modules/**",
+        "**/*.d.ts",
+        "**/.md"
+    ],
