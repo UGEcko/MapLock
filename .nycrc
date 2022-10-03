@@ -1,10 +1,22 @@
-
+{
+    "cache": false,
+    "check-coverage": false,
+    "extension": [
+        ".ts"
+    ],
     "include": [
         "**/*.ts"
     ],
     "exclude": [
         "coverage/**",
-        "node_modules/**",
         "**/*.d.ts",
-        "**/.md"
     ],
+    "sourceMap": true,
+    "reporter": [
+        "html",
+        "text",
+        "text-summary"
+    ],
+    "all": true,
+    "instrument": true
+}
