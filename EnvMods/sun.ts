@@ -10,12 +10,12 @@ import * as remapper from "https://deno.land/x/remapper@2.1.0/src/mod.ts"
  * @author splashcard__
  */
 
-export function sun(posX: number, posY: number, posZ: number, scale: number, lightID : number, uses: number) {
+export function sun(posX: number, posY: number, posZ: number, scale: number, lightID : number) {
     const sun = new remapper.Environment("GlowLineH$", "Regex")
     sun.position = [posX, posY, posZ];
     sun.scale = [scale, scale + 0.5, scale];
     sun.lightID = lightID;
-    sun.duplicate = uses;
+    sun.duplicate = 1;
     sun.push();
 }
 
