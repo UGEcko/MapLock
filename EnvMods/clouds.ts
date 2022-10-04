@@ -11,10 +11,10 @@ import * as remapper from "https://deno.land/x/remapper@2.1.0/src/mod.ts"
  * @author splashcard__
  */
 
-export function clouds(x: number, y: number, z: number, scalex: number, scaley: number, scalez: number, uses: number) {
+export function clouds(x: number, y: number, z: number, scalex: number, scaley: number, scalez: number) {
     const clouds = new remapper.Environment("HighCloudsGenerator$", "Regex")
     clouds.position = [x, y, z];
     clouds.scale = [scalex, scaley, scalez];
-    clouds.duplicate = uses;
+    clouds.duplicate = 1;
     clouds.push();
 }
