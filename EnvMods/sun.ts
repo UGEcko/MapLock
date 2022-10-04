@@ -1,13 +1,12 @@
 import * as remapper from "https://deno.land/x/remapper@2.1.0/src/mod.ts"
 
 /**
- * @param posX
- * @param posY
- * @param posZ
- * @param scale
- * @param lightID
- * @param uses
- * @author splashcard__
+ * @param posX the position of the sun on the x axis
+ * @param posY the position of the sun on the y axis
+ * @param posZ the position of the sun on the z axis
+ * @param scale the scale of the sun
+ * @param lightID the ID to light the sun
+ * @author splashcard__ respect the grind
  */
 
 export function sun(posX: number, posY: number, posZ: number, scale: number, lightID : number) {
