@@ -1,8 +1,8 @@
 import * as remapper from "https://deno.land/x/remapper@2.1.0/src/mod.ts"
 /**
- * @param ID
- * @param lookupmethod
- * @author splashcard__
+ * @param ID the environment ID of the object to despawn
+ * @param lookupmethod the method of finding the object to despawn (Contains, Regex, Exact, StartsWith, EndsWith)
+ * @author splashcard__ <-- go play my maps or smthn
  */
 
 export function despawn(ID: string, lookupmethod: string) { 
