@@ -15,14 +15,15 @@ export function laserfeild(height: number, IDmin: number, ammount:number, allowR
     const rot = (Math.random() * (40)) - 20
     const rot2 = (Math.random() * (40)) - 20
     const geo = new remapper.Geometry("Cube", {
-      _shader: "Opaque_Light"
+      _shader: "OpaqueLight"
     })
     geo.position = [x, height, z];
-    if (allowRotation = true) {
+    geo.lightID = IDmin;
+    if (allowRotation === true) {
       geo.rotation = [rot, 0, rot2];
     }
     else {
-      geo.rotation = [0, 0, 0]
+      geo.rotation = [0, 0, 0];
     }
     geo.push();
   }
