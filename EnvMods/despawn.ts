@@ -6,7 +6,7 @@ import * as remapper from "https://deno.land/x/remapper@2.1.0/src/mod.ts"
  * @param lookupmethod the method to find the Environment peice to despawn
  * @author splashcard__ Hi there 
  */
-
+// deno-lint-ignore no-explicit-any
 export function despawn(ID: string, lookupmethod: any) { 
     switch(ID) {
         case "bts":
