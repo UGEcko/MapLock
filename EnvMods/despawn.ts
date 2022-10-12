@@ -17,7 +17,7 @@ export function despawn(ID: string, lookupmethod: any) {
     }
 
     const env = new remapper.Environment(`${ID}`, lookupmethod);
-    env.position = [-69420, -69420, -69420];
+    env.position = [0, -9999, 0];
     env.push();
 }
 
