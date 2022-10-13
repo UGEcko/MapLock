@@ -14,6 +14,8 @@ export function despawn(ID: string, lookupmethod: any) {
             break
         case "billie":
             ID = "BillieEnvironment.[0]Environment"
+        case "all":
+            ID = "Environment"
     }
 
     const env = new remapper.Environment(`${ID}`, lookupmethod);
