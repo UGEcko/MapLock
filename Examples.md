@@ -25,7 +25,7 @@ and that should do it for install, up next are the functions
 import * as EnvModder from './EnvMods/index.ts'
 
 //despawns the whole BTS environment
-EnvMods.despawn("bts", "Contains")
+EnvModder.despawn("bts", "Contains")
 ```
 Despwan is extremely simple, it just takes the entirety of the bts environment and moves it way out of the player's sight, essentially despawning the environment
 despwan() has two constants for environments `"bts"` or `"billie"` removing the entirety of their respective environments, you can also use your own custom ids and different lookup methods if you so desire, `"bts"` and `"billie"` will only work with contains.
@@ -35,13 +35,13 @@ despwan() has two constants for environments `"bts"` or `"billie"` removing the 
 ```ts
 import * as EnvModder from './EnvMods/index.ts'
 
-EnvMods.sun(
+EnvModder.sun(
  /*position*/ [0, 10, 30],
  /*scale*/ [1, 1.5, 1],
  /*lightID*/ 21
 )
 ```
-`sun()` will unfortunately only work in BTS environment :(... Anyways this will use `GlowLineH$` to make a sun effect with customizable scale and position
+this will use `Geomotry` to make a sun effect with customizable scale and position
 * position = array
 * scale = array
 * lightID = integer
@@ -50,7 +50,7 @@ EnvMods.sun(
 ```ts
 import * as EnvModder from './EnvMods/index.ts'
 
-EnvMods.clouds(
+EnvModder.clouds(
  /*position*/ [0, 0, 0],
  /*scale*/ [1, 1, 1],
  /*rotation*/ [0, 90, 90]
