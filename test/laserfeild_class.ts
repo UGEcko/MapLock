@@ -8,7 +8,7 @@ import * as rm from "https://deno.land/x/remapper@2.1.0/src/mod.ts"
 
 
 
-export class lasefeild{
+export class lasefeild{ 
  
   import(json: Record<string, any>) {
         this.json = json;
