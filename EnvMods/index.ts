@@ -10,4 +10,4 @@ export * from './water.ts'
 export * from './animatePlayer.ts'
 export * from './fancyWater.ts'
 export * from './laserfeild.ts'
-export * from './laserfeild_class.ts
+export * from './laserfeild_class.ts'
