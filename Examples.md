@@ -24,6 +24,7 @@ and that should do it for install, up next are the functions
 ```ts
 import * as EnvModder from './EnvMods/index.ts'
 
+//despawns the whole BTS environment
 EnvMods.despawn("bts", "Contains")
 ```
 Despwan is extremely simple, it just takes the entirety of the bts environment and moves it way out of the player's sight, essentially despawning the environment
@@ -49,76 +50,65 @@ EnvMods.sun(
 ```ts
 import * as EnvModder from './EnvMods/index.ts'
 
-EnvMods.clouds(positionX, positionY, positionZ, scaleX, scaleY, scaleZ, uses)
+EnvMods.clouds(
+ /*position*/ [0, 0, 0],
+ /*scale*/ [1, 1, 1],
+ /*rotation*/ [0, 90, 90]
+)
 ```
-`clouds()` is really just a dumb way to make clouds tbh but it does make it easier and shorter ig (if you're wondering why there's no rotation its because cloud rotation just gets really buggy and stuff)  Uses is the ammount of times you used this __*never make this 0*__
-* positionX = number
-* positionY = number
-* positionZ = number
-* scaleX = number
-* scaleY = number
-* scaleZ = number
-* uses = integer
+`clouds()` is really just a dumb way to make clouds tbh but it does make it easier and shorter ig
+* position = array
+* rotation = array
+* scale = array
 
 ### laserfeild
-laserfeild is not currently in the package because it is still in testing but you can still copy it from the src code (it's kinda unstable and also incomplete)
+```ts
+import * as envmods from './EnvMods/index.ts'
+
+envmods.laserfeild(
+ /*height*/ 0,
+ /*IDmin*/ 21,
+ /*ammount*/ 21,
+ /*allowRotation*/ false
+)
+```
+
+__NOTE__ IDmin will be the first light ID a laser is registered to, meaning that if IDmin was 21 and my ammount was 7 my light IDs would be 21, 22, 23, 24, 25, 26, 27, 28.
+allowRotation allows rotation of -20 - 20 on the x and z axis, IF you want the lasers to be straight up and down, just leave this to false.
+
+* height = number
+* IDmin = integer
+* ammount = number
+* allowRotation = boolean
 
 # object statments
 ### water
 ```ts
 import * as EnvModder from './EnvMods/index.ts'
 
-EnvModder.water(time, duration, y level)
+EnvModder.water(
+/*time*/ 69
+/*duration*/ 420
+/*height*/ -1.5
+)
 ```
-or
-```ts
-const water = new EnvModder.water()
-water.time = 69;
-water.duration = 420;
-water.y = -1.5
-water.push();
-```
-This is pretty self explanitory, it makes a massive lake/ocean so you can be like every other basic noodle mapper who uses copies swifter instead of making your own legitemate thing :)
+
+This is pretty self explanitory, it makes a massive lake/ocean ~~so you can be like every other basic noodle mapper who uses copies swifter instead of making your own legitemate thing :)~~
 time = number
 duration = number
 y level = number
 
-### give notes track
-```ts
-import * as EnvModder from './EnvMods/index.ts'
-
-EnvModder.giveNotesTrack(startTime, duration, track)
-```
-This is also pretty self explanatory, gives the notes between the selected times a track already animated,
-startTime = number
-duration = number
-track = string
 ### player movment
 ```ts
 import * as EnvModder from './EnvMods/index.ts'
 
 EnvModder.animatePlayer(
-   0,
-   100,
-   [[0, 0, 0, 0], [0, 100, 0, 1, "easeStep"]]
+   /*time*/ 0,
+   /*duration*/ 100,
+   /*position*/ [[0, 0, 0, 0], [0, 100, 0, 1, "easeStep"]]
 )
 ```
 This will move the player, but the exiting part is - no extra parent track needed - this will move the player and the notes together!
-* StartBeat = number
+* time = number
 * duration = number
-* startX = number
-* endX = number
-* startY = number
-* endY = number
-* startZ = number
-* endZ = number
-### giveNotesTrack
-```ts
-import * as EnvModder from './Envmods/index.ts'
-
-EnvModder.giveNotesTrack(startbeat, duration, "track name")
-```
-`giveNotesTrack` will give a selection of notes (from start beat to end beat) a track of your choosing
-* start beat: number
-* duration: number
-* track name: string
+* position = array
