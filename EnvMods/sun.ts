@@ -12,8 +12,8 @@ export function sun(position: any scale: number, lightID : number) {
         _shader: "OpaqueLight"
     })
     sun.position = position;
-    sun.scale = [scale, scale, scale]
-    sun.lightID = lightID
+    sun.scale = [scale, scale, scale];
+    sun.lightID = lightID;
     sun.push();
 }
 
