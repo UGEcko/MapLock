@@ -78,7 +78,7 @@ allowRotation allows rotation of -20 - 20 on the x and z axis, IF you want the l
 
 * height = number
 * IDmin = integer
-* ammount = number
+* ammount = integer
 * allowRotation = boolean
 
 # object statments
