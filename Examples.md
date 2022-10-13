@@ -34,15 +34,16 @@ despwan() has two constants for environments `"bts"` or `"billie"` removing the 
 ```ts
 import * as EnvModder from './EnvMods/index.ts'
 
-EnvMods.sun(positionX, positionY, positionZ, scale, lightID, uses)
+EnvMods.sun(
+ //position [0, 10, 30]
+ //scale [1, 1.5, 1]
+ //lightID 21
+)
 ```
-`sun()` will unfortunately only work in BTS environment :(... Anyways this will use `GlowLineH$` to make a sun effect with customizable scale and position, the uses category will allow this to be duped multiple times, __*NEVER make this 0*__
-* positionX = number
-* positionY = number
-* positionZ = number
-* scale = number
+`sun()` will unfortunately only work in BTS environment :(... Anyways this will use `GlowLineH$` to make a sun effect with customizable scale and position
+* position = array
+* scale = array
 * lightID = integer
-* uses = integer
 
 ### clouds
 ```ts
