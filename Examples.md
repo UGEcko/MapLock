@@ -113,6 +113,26 @@ This will move the player, but the exiting part is - no extra parent track neede
 * duration = number
 * position = array
 
+### NoteFilter
+```ts
+import * as EnvModder from './EnvMods/index.ts'
+
+noteFilter(
+    21, //Time Start
+    21, //Duration
+    [0, 0], // Position to Select
+    { //Custom Data
+        _position: [3, 3, 3]
+        _dissolve = [[1, 0], [0, 1]]
+    }
+)
+```
+
+* time Start = number
+* Duration = number
+* position  = array
+* CustomData = basically just like noodle scripting in js idk
+
 # classes
 
 I am currently working on converting some of these functions to classes for ease of use.
