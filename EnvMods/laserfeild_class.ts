@@ -6,11 +6,19 @@ import * as rm from "https://deno.land/x/remapper@2.1.0/src/mod.ts"
 * @param {boolean} allowRotation
 */
 
- import(json: Record<string, any>) {
-        this.json = json;
- }
+
 
 export class lasefeild{
+ 
+  import(json: Record<string, any>) {
+        this.json = json;
+ }
+ 
+  json: any = {
+            allowRotation = false,
+            height = 0
+        }
+    };
   constructor(ammount: number) {
     for(let i = 1;  i > ammount; i++) {
         const x = (Math.random() * (40)) - 20
