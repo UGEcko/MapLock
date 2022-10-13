@@ -35,8 +35,8 @@ despwan() has two constants for environments `"bts"` or `"billie"` removing the 
 import * as EnvModder from './EnvMods/index.ts'
 
 EnvMods.sun(
- /*position*/ [0, 10, 30]
- /*scale*/ [1, 1.5, 1]
+ /*position*/ [0, 10, 30],
+ /*scale*/ [1, 1.5, 1],
  /*lightID*/ 21
 )
 ```
