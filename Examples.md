@@ -117,7 +117,7 @@ This will move the player, but the exiting part is - no extra parent track neede
 ```ts
 import * as EnvModder from './EnvMods/index.ts'
 
-noteFilter(
+EnvModder.noteFilter(
     21, //Time Start
     21, //Duration
     [0, 0], // Position to Select
