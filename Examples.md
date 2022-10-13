@@ -112,3 +112,30 @@ This will move the player, but the exiting part is - no extra parent track neede
 * time = number
 * duration = number
 * position = array
+
+# classes
+
+I am currently working on converting some of these functions to classes for ease of use.
+
+for example:
+```ts
+import * as envmods from './EnvMods/index.ts'
+
+envmods.laserfeild(
+ /*height*/ 0,
+ /*IDmin*/ 21,
+ /*ammount*/ 21,
+ /*allowRotation*/ false
+)
+```
+VS.
+```ts
+import * as envmods from './EnvMods/index.ts'
+
+const feild = new envmods.laserfeild()
+feild.height = 0;
+feild.IDmin = 21;
+feild.ammount = 21;
+feild.allowRotation = false;
+feild.push();
+ 
