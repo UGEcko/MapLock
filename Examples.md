@@ -15,17 +15,17 @@ EnvMods_setup
 ```
 that should download the files for you, now to import add this to your imports list
 ```ts
-import * as EnvModder from './EnvMods/index.ts'
+import * as envmods from './EnvMods/index.ts'
 ```
 and that should do it for install, up next are the functions
 
 # Environment functions
 ### despawn
 ```ts
-import * as EnvModder from './EnvMods/index.ts'
+import * as envmods from './EnvMods/index.ts'
 
 //despawns the whole BTS environment
-EnvModder.despawn("bts", "Contains")
+envmods.despawn("bts", "Contains")
 ```
 Despwan is extremely simple, it just takes the entirety of the bts environment and moves it way out of the player's sight, essentially despawning the environment
 despwan() has two constants for environments `"bts"` or `"billie"` removing the entirety of their respective environments, you can also use your own custom ids and different lookup methods if you so desire, `"bts"` and `"billie"` will only work with contains.
@@ -33,24 +33,24 @@ despwan() has two constants for environments `"bts"` or `"billie"` removing the 
 ### sun
 
 ```ts
-import * as EnvModder from './EnvMods/index.ts'
+import * as envmods from './EnvMods/index.ts'
 
-EnvModder.sun(
+envmods.sun(
  /*position*/ [0, 10, 30],
  /*scale*/ [1, 1.5, 1],
  /*lightID*/ 21
 )
 ```
-this will use `Geomotry` to make a sun effect with customizable scale and position
+this will use `Geometry` to make a sun effect with customizable scale and position
 * position = array
 * scale = array
 * lightID = integer
 
 ### clouds
 ```ts
-import * as EnvModder from './EnvMods/index.ts'
+import * as envmods from './EnvMods/index.ts'
 
-EnvModder.clouds(
+envmods.clouds(
  /*position*/ [0, 0, 0],
  /*scale*/ [1, 1, 1],
  /*rotation*/ [0, 90, 90]
@@ -84,9 +84,9 @@ allowRotation allows rotation of -20 - 20 on the x and z axis, IF you want the l
 # object statments
 ### water
 ```ts
-import * as EnvModder from './EnvMods/index.ts'
+import * as envmods from './EnvMods/index.ts'
 
-EnvModder.water(
+envmods.water(
 /*time*/ 69
 /*duration*/ 420
 /*height*/ -1.5
@@ -100,9 +100,9 @@ y level = number
 
 ### player movment
 ```ts
-import * as EnvModder from './EnvMods/index.ts'
+import * as envmods from './EnvMods/index.ts'
 
-EnvModder.animatePlayer(
+envmods.animatePlayer(
    /*time*/ 0,
    /*duration*/ 100,
    /*position*/ [[0, 0, 0, 0], [0, 100, 0, 1, "easeStep"]]
@@ -115,9 +115,9 @@ This will move the player, but the exiting part is - no extra parent track neede
 
 ### NoteFilter
 ```ts
-import * as EnvModder from './EnvMods/index.ts'
+import * as envmods from './EnvMods/index.ts'
 
-EnvModder.noteFilter(
+envmods.noteFilter(
     21, //Time Start
     21, //Duration
     [0, 0], // Position to Select
