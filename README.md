@@ -11,7 +11,7 @@ import * as envmods from './EnvMods/index.ts'
 //moves the entire environment to -9999 on th y axis evectively despawning it
 envmods.despawn("Environment", "Contains")
 ```
-or
+or 
 
 ```ts
 import * as envmods from './EnvMods/index.ts''
