@@ -158,4 +158,21 @@ feild.IDmin = 21;
 feild.ammount = 21;
 feild.allowRotation = false;
 feild.push();
+
+# the other way
+
+So you can do all of this another way if you want and it is probably a bit easier but its up to you
+```ts
+import {laserfeild, sun, noteFilter} from './EnvMods/index.ts'
+
+noteFilter(
+    21, //Time Start
+    21, //Duration
+    [0, 0], // Position to Select
+    { //Custom Data
+        _position: [3, 3, 3]
+        _dissolve = [[1, 0], [0, 1]]
+    }
+}
+
  
