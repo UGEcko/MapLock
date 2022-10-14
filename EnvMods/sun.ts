@@ -7,7 +7,7 @@ import * as remapper from "https://deno.land/x/remapper@2.1.0/src/mod.ts"
  * @author splashcard__ respect the grind
  */
 
-export function sun(position: any scale: number, lightID : number) {
+export function sun(position: any, scale: number, lightID : number) {
     const sun = new remapper.Geometry("Cylinder", {
         _shader: "OpaqueLight"
     })
