@@ -11,12 +11,12 @@ import * as rm from "https://deno.land/x/remapper@2.1.0/src/mod.ts"
 
 export function starGenerator(amount: number, individualSize: number, Distance: number, Time: number, duration: number) {
   for (let i = 0; i <= amount; i++) {
-    const star = new rm.Wall(Time, duration);
-    const rotation: Vec3 = [rand(10, 360),rand(10, 360), 0];
+    const stars = new rm.Wall(Time, duration);
+    const starRotation: Vec3 = [rand(10, 360),rand(10, 360), 0];
   
-    star.animate.definitePosition = arrAdd(rm.rotatePoint(rotation, [0, Distance, -individualSize / 2]), 0) as Vec3;
-    star.animate.scale = [individualSize, individualSize, individualSizee];
-    star.animate.color = [1,1,1,2];
-    star.push();
+    stars.animate.definitePosition = arrAdd(rm.rotatePoint(starRotation, [0, Distance, -individualSize / 2]), 0) as Vec3;
+    stars.animate.color = [1,1,1,2];
+    stars.scale = [individualSize, individualSize, individualSize];
+    stars.push();
   }
 }
