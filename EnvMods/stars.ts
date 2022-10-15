@@ -1,4 +1,6 @@
-import * as rm from "https://deno.land/x/remapper@2.1.0/src/mod.ts"
+import * as rm  from "https://deno.land/x/remapper@2.1.0/src/mod.ts"
+
+const map = new rm.Difficulty("ExpertPlusLawless", "ExpertPlusStandard");
 
 /**
 * @param ammount the ammount of stars to spawn
@@ -10,13 +12,15 @@ import * as rm from "https://deno.land/x/remapper@2.1.0/src/mod.ts"
 */
 
 export function starGenerator(amount: number, individualSize: number, Distance: number, Time: number, duration: number) {
-  for (let i = 0; i <= amount; i++) {
-    const stars = new rm.Wall(Time, duration);
-    const starRotation: Vec3 = [rand(10, 360),rand(10, 360), 0];
-  
-    stars.animate.definitePosition = arrAdd(rm.rotatePoint(starRotation, [0, Distance, -individualSize / 2]), 0) as Vec3;
-    stars.animate.color = [1,1,1,2];
-    stars.scale = [individualSize, individualSize, individualSize];
-    stars.push();
+    for (let i = 0; i <= amount; i++) {
+      const stars = new rm.Wall(Time, duration);
+      const starRotation: rm.Vec3 = [rm.rand(10, 360), rm.rand(10, 360), 0];
+    
+      stars.animate.definitePosition = rm.arrAdd(rm.rotatePoint(starRotation, [0, Distance, -individualSize / 2]), 0) as rm.Vec3;
+      stars.animate.color = [1,1,1,2];
+      stars.scale = [individualSize, individualSize, individualSize];
+      stars.push();
+    }
   }
-}
+
+map.save();
