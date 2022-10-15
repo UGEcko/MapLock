@@ -137,5 +137,5 @@ mp.noteFilter(
 I'm exited to say, that sometime in the future when v3 modcharts are more relevant (v3 allows for geometry lighting)  that I will be using a lot more geometry lights, but for now sit tight and listen to the other updates I have planned.  
 
 * all environment support for (almost) all functions.  I am planning to utilize geometry to the best of my ability to make some of these avalible for all environments
-* classes for some functions with more params ie laserfeild.
+* classes for some functions with more params ie laserfeild. 
 
