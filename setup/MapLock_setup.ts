@@ -81,4 +81,4 @@ for await (const file of Deno.readDir(templatePath)) {
 
 await Promise.all(tasks)
 
-console.log(`Yay we did the setup for EnvMods at ${destFolder}`)
+console.log(`Yay we did the setup for MapLock at ${destFolder} , Thanks for useing my really dumb program :D`)
