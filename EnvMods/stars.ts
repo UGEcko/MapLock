@@ -1,7 +1,5 @@
 import * as rm  from "https://deno.land/x/remapper@2.1.0/src/mod.ts"
 
-const map = new rm.Difficulty("ExpertPlusLawless", "ExpertPlusStandard");
-
 /**
 * @param ammount the ammount of stars to spawn
 * @param individualSize the size of each star
