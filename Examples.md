@@ -7,7 +7,7 @@ This package is meant to be used with [ReMapper](https://github.com/Swifter1243/
 # installing
  in order to install run this in your map directory terminal:
 ```powershell
-deno install --allow-all -f --reload https://raw.githubusercontent.com/Splashcard04/EnvMods/main/setup/EnvMods_setup.ts
+deno install --allow-all -f --reload https://raw.githubusercontent.com/Splashcard04/MapLock/main/setup/MapLock_setup.ts
 ```
 then just run 
 ```powershell
