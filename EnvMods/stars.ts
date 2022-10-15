@@ -21,4 +21,3 @@ export function starGenerator(amount: number, individualSize: number, Distance: 
     }
   }
 
-map.save();
