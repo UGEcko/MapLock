@@ -23,7 +23,7 @@ if (!userDir) {
 const remapperDirectory = path.join(userDir, "remapper_setup")
 
 if (!ref) {
-    const latestRelease = await fetch("https://api.github.com/repos/Splashcard04/EnvMods/releases/latest", {
+    const latestRelease = await fetch("https://api.github.com/repos/Splashcard04/MapLock/releases/latest", {
         headers: {
             "Accept": "application/vnd.github+json"
         }
