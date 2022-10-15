@@ -1,6 +1,5 @@
-![Capturess](https://user-images.githubusercontent.com/111317032/188249287-a204e2f3-e3e6-414c-99dd-4445934e7112.PNG)
 # Welcome
-Welcome to EnvMods!  This is an awesome package for (mostly) environment ReMapper Statments, this also has other functions like animate tracks and other things made easier!  
+Welcome to MapLock!  This is an awesome package for (mostly) environment ReMapper Statments, this also has other functions like animate tracks and other things made easier!  
 
 This package is meant to be used with [ReMapper](https://github.com/Swifter1243/ReMapper)
 
@@ -11,21 +10,21 @@ deno install --allow-all -f --reload https://raw.githubusercontent.com/Splashcar
 ```
 then just run 
 ```powershell
-EnvMods_setup
+MapLock_setup
 ```
 that should download the files for you, now to import add this to your imports list
 ```ts
-import * as envmods from './EnvMods/index.ts'
+import * as mp from './EnvMods/index.ts'
 ```
 and that should do it for install, up next are the functions
 
 # Environment functions
 ### despawn
 ```ts
-import * as envmods from './EnvMods/index.ts'
+import * as mp from './src/index.ts'
 
 //despawns the whole BTS environment
-envmods.despawn("bts", "Contains")
+mp.despawn("bts", "Contains")
 ```
 Despwan is extremely simple, it just takes the entirety of the bts environment and moves it way out of the player's sight, essentially despawning the environment
 despwan() has two constants for environments `"bts"` or `"billie"` removing the entirety of their respective environments, you can also use your own custom ids and different lookup methods if you so desire, `"bts"` and `"billie"` will only work with contains.
@@ -33,9 +32,9 @@ despwan() has two constants for environments `"bts"` or `"billie"` removing the 
 ### sun
 
 ```ts
-import * as envmods from './EnvMods/index.ts'
+import * as mp from './src/index.ts'
 
-envmods.sun(
+mp.sun(
  /*position*/ [0, 10, 30],
  /*scale*/ [1, 1.5, 1],
  /*lightID*/ 21
@@ -48,9 +47,9 @@ this will use `Geometry` to make a sun effect with customizable scale and positi
 
 ### clouds
 ```ts
-import * as envmods from './EnvMods/index.ts'
+import * as mp from './src/index.ts'
 
-envmods.clouds(
+mp.clouds(
  /*position*/ [0, 0, 0],
  /*scale*/ [1, 1, 1],
  /*rotation*/ [0, 90, 90]
@@ -63,9 +62,9 @@ envmods.clouds(
 
 ### laserfeild
 ```ts
-import * as envmods from './EnvMods/index.ts'
+import * as mp from './src/index.ts'
 
-envmods.laserfeild(
+mp.laserfeild(
  /*height*/ 0,
  /*IDmin*/ 21,
  /*ammount*/ 21,
@@ -84,9 +83,9 @@ allowRotation allows rotation of -20 - 20 on the x and z axis, IF you want the l
 # object statments
 ### water
 ```ts
-import * as envmods from './EnvMods/index.ts'
+import * as mp from './src/index.ts'
 
-envmods.water(
+mp.water(
 /*time*/ 69
 /*duration*/ 420
 /*height*/ -1.5
@@ -100,9 +99,9 @@ y level = number
 
 ### player movment
 ```ts
-import * as envmods from './EnvMods/index.ts'
+import * as mp from './src/index.ts'
 
-envmods.animatePlayer(
+mp.animatePlayer(
    /*time*/ 0,
    /*duration*/ 100,
    /*position*/ [[0, 0, 0, 0], [0, 100, 0, 1, "easeStep"]]
@@ -115,9 +114,9 @@ This will move the player, but the exiting part is - no extra parent track neede
 
 ### NoteFilter
 ```ts
-import * as envmods from './EnvMods/index.ts'
+import * as mp from './src/index.ts'
 
-envmods.noteFilter(
+mp.noteFilter(
     21, //Time Start
     21, //Duration
     [0, 0], // Position to Select
@@ -133,46 +132,10 @@ envmods.noteFilter(
 * position  = array
 * CustomData = basically just like noodle scripting in js idk
 
-# classes
+# future
 
-I am currently working on converting some of these functions to classes for ease of use.
+I'm exited to say, that sometime in the future when v3 modcharts are more relevant (v3 allows for geometry lighting)  that I will be using a lot more geometry lights, but for now sit tight and listen to the other updates I have planned.  
 
-for example:
-```ts
-import * as envmods from './EnvMods/index.ts'
+* all environment support for (almost) all functions.  I am planning to utilize geometry to the best of my ability to make some of these avalible for all environments
+* classes for some functions with more params ie laserfeild.
 
-envmods.laserfeild(
- /*height*/ 0,
- /*IDmin*/ 21,
- /*ammount*/ 21,
- /*allowRotation*/ false
-)
-```
-VS.
-```ts
-import * as envmods from './EnvMods/index.ts'
-
-const feild = new envmods.laserfeild()
-feild.height = 0;
-feild.IDmin = 21;
-feild.ammount = 21;
-feild.allowRotation = false;
-feild.push();
-
-# the other way
-
-So you can do all of this another way if you want and it is probably a bit easier but its up to you
-```ts
-import {laserfeild, sun, noteFilter} from './EnvMods/index.ts'
-
-noteFilter(
-    21, //Time Start
-    21, //Duration
-    [0, 0], // Position to Select
-    { //Custom Data
-        _position: [3, 3, 3]
-        _dissolve = [[1, 0], [0, 1]]
-    }
-}
-
- 
