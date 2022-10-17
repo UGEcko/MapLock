@@ -1,7 +1,7 @@
 
 
 # MapLock
-Welcome to MapLock, a package (in beta) designed to make ReMapper environment statements and others more friendly, while also giving some helpful effects such as `despawn()` which will despawn the bts environment to make room for yours!  Tutorials/explanations for each function can be found in the [examples](https://github.com/Splashcard04/MapLock/wiki/Examples) for this repo!  If you have any questions or would like to add to this repo dm me on discord @splashcard__#2121
+Welcome to MapLock, a package (in beta) designed to make ReMapper environment statements and others more friendly, while also giving some helpful effects such as `despawn()` which will despawn any environment peice (of your choice) to make room for yours!  Tutorials/explanations for each function can be found in the [examples](https://github.com/Splashcard04/MapLock/wiki/Examples) for this repo!  If you have any questions or would like to add to this repo dm me on discord @splashcard__#2121 or you could just pr your own functions (make sure they are in the src folder and formatted as mine are)
 
 Example functions:
 
