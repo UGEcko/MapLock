@@ -16,7 +16,7 @@ MapLock_setup
 ```
 that should download the files for you, now to import add this to your imports list
 ```ts
-import * as mp from './EnvMods/index.ts'
+import * as mp from './src/index.ts'
 ```
 and that should do it for install, up next are the functions
 
