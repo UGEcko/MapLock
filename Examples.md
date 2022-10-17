@@ -1,6 +1,3 @@
-<img src="https://user-images.githubusercontent.com/111317032/196288977-46432d19-d0e6-4e7b-9f28-09ebe29dc3f9.png" alt="image"/>![image](https://user-images.githubusercontent.com/111317032/196289062-cfd20dce-5e94-4e0d-aa0b-79c4dd58752a.png)
-
-
 # Welcome
 Welcome to MapLock!  This is an awesome package for (mostly) environment ReMapper Statments, this also has other functions like animate tracks and other things made easier!  
 
