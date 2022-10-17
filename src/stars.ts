@@ -9,7 +9,7 @@ import * as rm  from "https://deno.land/x/remapper@2.1.0/src/mod.ts"
 * @author splashcard__
 */
 
-export function starGenerator(amount: number, individualSize: number, Distance: number, Time: number, duration: number) {
+export function stars(amount: number, individualSize: number, Distance: number, Time: number, duration: number) {
     for (let i = 0; i <= amount; i++) {
       const stars = new rm.Wall(Time, duration);
       const starRotation: rm.Vec3 = [rm.rand(10, 360), rm.rand(10, 360), 0];
