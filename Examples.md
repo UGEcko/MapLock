@@ -114,6 +114,28 @@ This will move the player, but the exiting part is - no extra parent track neede
 * duration = number
 * position = array
 
+### stars
+
+```ts
+import * as mp from './src/index.ts'
+
+mp.stars(
+  150, //ammount
+  5, //individual size
+  10, //distance
+  0, //time
+  100, //duration
+)
+```
+
+Spawns a sphere of stars around the player using walls (could cause small ammounts of lag)
+
+* ammount (the ammount of stars to spawn) = number
+* individual size (the size of each star) = number
+* distance (the distance between eac star) = number
+* time (the time to spawn the stars) = number
+* duration (the duration the stars will last) = number
+
 ### NoteFilter
 ```ts
 import * as mp from './src/index.ts'
