@@ -9,7 +9,7 @@ Example functions:
 import * as ml from './src/index.ts'
 
 //moves the entire environment to -9999 on th y axis evectively despawning it
-envmods.despawn("Environment", "Contains")
+ml.despawn("Environment", "Contains")
 ```
 or 
 
@@ -17,7 +17,7 @@ or
 import * as ml from './src/index.ts''
 
 //generates a feild of lasers with a given height and ammount
-envmods.laserfeild(
+ml.laserfeild(
   0, //height
   21, //Minimum Light ID see examples for more details
   21, //ammount 
