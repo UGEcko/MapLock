@@ -124,7 +124,7 @@ mp.stars(
   5, //individual size
   10, //distance
   0, //time
-  100, //duration
+  100 //duration
 )
 ```
 
