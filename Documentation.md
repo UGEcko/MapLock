@@ -16,14 +16,14 @@ MapLock_setup
 ```
 that should download the files for you, now to import add this to your imports list
 ```ts
-import * as mp from './src/index.ts'
+import * as ml from './src/exports.ts'
 ```
 and that should do it for install, up next are the functions
 
 # Environment functions
 ### despawn
 ```ts
-import * as mp from './src/index.ts'
+import * as ml from './src/exports.ts'
 
 //despawns the whole BTS environment
 mp.despawn("bts", "Contains")
@@ -34,7 +34,7 @@ despwan() has two constants for environments `"bts"` or `"billie"` removing the 
 ### sun
 
 ```ts
-import * as mp from './src/index.ts'
+import * as ml from './src/exports.ts'
 
 mp.sun(
  /*position*/ [0, 10, 30],
@@ -49,7 +49,7 @@ this will use `Geometry` to make a sun effect with customizable scale and positi
 
 ### clouds
 ```ts
-import * as mp from './src/index.ts'
+import * as ml from './src/exports.ts'
 
 mp.clouds(
  /*position*/ [0, 0, 0],
@@ -64,7 +64,7 @@ mp.clouds(
 
 ### laserfeild
 ```ts
-import * as mp from './src/index.ts'
+import * as ml from './src/exports.ts'
 
 mp.laserfeild(
  /*height*/ 0,
@@ -85,7 +85,7 @@ allowRotation allows rotation of -20 - 20 on the x and z axis, IF you want the l
 # object statments
 ### water
 ```ts
-import * as mp from './src/index.ts'
+import * as ml from './src/exports.ts'
 
 mp.water(
 /*time*/ 69
@@ -101,9 +101,9 @@ y level = number
 
 ### player movment
 ```ts
-import * as mp from './src/index.ts'
+import * as ml from './src/exports.ts'
 
-mp.animatePlayer(
+ml.animatePlayer(
    /*time*/ 0,
    /*duration*/ 100,
    /*position*/ [[0, 0, 0, 0], [0, 100, 0, 1, "easeStep"]]
@@ -117,7 +117,7 @@ This will move the player, but the exiting part is - no extra parent track neede
 ### stars
 
 ```ts
-import * as mp from './src/index.ts'
+import * as ml from './src/exports.ts'
 
 mp.stars(
   150, //ammount
@@ -138,7 +138,7 @@ Spawns a sphere of stars around the player using walls (could cause small ammoun
 
 ### NoteFilter
 ```ts
-import * as mp from './src/index.ts'
+import * as ml from './src/exports.ts'
 
 mp.noteFilter(
     21, //Time Start
@@ -159,7 +159,7 @@ mp.noteFilter(
 # the entire other way you could do this
 
 ```ts
-import {despawn, laserfeild} from './src/index.ts'
+import {despawn, laserfeild} from './src/exports.ts'
 
 despawn("billie", "Contains")
 ```
@@ -171,8 +171,7 @@ importing this way will allow you to not prefix everything with mp. and you can 
 I'm exited to say, that sometime in the future when v3 modcharts are more relevant (v3 allows for geometry lighting)  that I will be using a lot more geometry lights making them all compatible, but for now sit tight and listen to the other updates I have planned.
 
 * all environment support for (almost) all functions.  I am planning to utilize geometry to the best of my ability to make some of these avalible for all environments
-* classes for some functions with more params ie laserfeild.
 * make the docs pretty!!!!
 * add some community made functions? (if people submit some lol)
-* organize functions
+* organize functions✔️
 
