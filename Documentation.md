@@ -37,12 +37,12 @@ despwan() has two constants for environments `"bts"` or `"billie"` removing the 
 import * as ml from './src/exports.ts'
 
 ml.sun(
- /*position*/ [0, 10, 30],
- /*scale*/ [1, 1.5, 1],
- /*lightID*/ 21
+   [0, 10, 30], //position
+   [1, 1.5, 1], //scale
+   21 //lightID
 )
 ```
-this will use `Geometry` to make a sun effect with customizable scale and position
+this will use `Geometry` to make a sun effect with customizable scale, position and lightID
 * position = array
 * scale = array
 * lightID = integer
@@ -52,12 +52,12 @@ this will use `Geometry` to make a sun effect with customizable scale and positi
 import * as ml from './src/exports.ts'
 
 ml.clouds(
- /*position*/ [0, 0, 0],
- /*scale*/ [1, 1, 1],
- /*rotation*/ [0, 90, 90]
+   [0, 0, 0], //position
+   [1, 1, 1], //scale
+   [0, 90, 90] //rotation
 )
 ```
-`clouds()` is really just a dumb way to make clouds tbh but it does make it easier and shorter ig
+`clouds()` is really just a dumb way to make clouds in the bts environment tbh but it does make it easier and shorter i suppose
 * position = array
 * rotation = array
 * scale = array
@@ -67,10 +67,10 @@ ml.clouds(
 import * as ml from './src/exports.ts'
 
 ml.laserfeild(
- /*height*/ 0,
- /*IDmin*/ 21,
- /*ammount*/ 21,
- /*allowRotation*/ false
+  0, //height
+  21, //minimum lightID
+  21, //ammount
+  false //allows rotation?
 )
 ```
 
