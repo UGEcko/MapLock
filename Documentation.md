@@ -26,7 +26,7 @@ and that should do it for install, up next are the functions
 import * as ml from './src/exports.ts'
 
 //despawns the whole BTS environment
-mp.despawn("bts", "Contains")
+ml.despawn("bts", "Contains")
 ```
 Despwan is extremely simple, it just takes the entirety of the bts environment and moves it way out of the player's sight, essentially despawning the environment
 despwan() has two constants for environments `"bts"` or `"billie"` removing the entirety of their respective environments, you can also use your own custom ids and different lookup methods if you so desire, `"bts"` and `"billie"` will only work with contains.
@@ -36,7 +36,7 @@ despwan() has two constants for environments `"bts"` or `"billie"` removing the 
 ```ts
 import * as ml from './src/exports.ts'
 
-mp.sun(
+ml.sun(
  /*position*/ [0, 10, 30],
  /*scale*/ [1, 1.5, 1],
  /*lightID*/ 21
@@ -51,7 +51,7 @@ this will use `Geometry` to make a sun effect with customizable scale and positi
 ```ts
 import * as ml from './src/exports.ts'
 
-mp.clouds(
+ml.clouds(
  /*position*/ [0, 0, 0],
  /*scale*/ [1, 1, 1],
  /*rotation*/ [0, 90, 90]
@@ -66,7 +66,7 @@ mp.clouds(
 ```ts
 import * as ml from './src/exports.ts'
 
-mp.laserfeild(
+ml.laserfeild(
  /*height*/ 0,
  /*IDmin*/ 21,
  /*ammount*/ 21,
@@ -87,7 +87,7 @@ allowRotation allows rotation of -20 - 20 on the x and z axis, IF you want the l
 ```ts
 import * as ml from './src/exports.ts'
 
-mp.water(
+ml.water(
 /*time*/ 69
 /*duration*/ 420
 /*height*/ -1.5
@@ -119,7 +119,7 @@ This will move the player, but the exiting part is - no extra parent track neede
 ```ts
 import * as ml from './src/exports.ts'
 
-mp.stars(
+ml.stars(
   150, //ammount
   5, //individual size
   10, //distance
@@ -140,7 +140,7 @@ Spawns a sphere of stars around the player using walls (could cause small ammoun
 ```ts
 import * as ml from './src/exports.ts'
 
-mp.noteFilter(
+ml.noteFilter(
     21, //Time Start
     21, //Duration
     [0, 0], // Position to Select
