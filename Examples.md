@@ -156,10 +156,23 @@ mp.noteFilter(
 * position  = array
 * CustomData = basically just like noodle scripting in js idk
 
+# the entire other way you could do this
+
+```ts
+import {despawn, laserfeild} from './src/index.ts'
+
+despawn("billie", "Contains")
+```
+
+importing this way will allow you to not prefix everything with mp. and you can just use functions without worrying about prefixes, that said - prefixing will allow you to see what this package has to offer.  If you'd like you can type `mp.` and vsc will autofill all of your options for you.  You will see each function that you can call at that time.  It is completely up to you which way you import, they both have their pros and cons but i would personnaly reccomend prefixing for this package as there as it is meant as an addon to rm and you probably wont be using a ton within your script.
+
 # future
 
-I'm exited to say, that sometime in the future when v3 modcharts are more relevant (v3 allows for geometry lighting)  that I will be using a lot more geometry lights, but for now sit tight and listen to the other updates I have planned.  
+I'm exited to say, that sometime in the future when v3 modcharts are more relevant (v3 allows for geometry lighting)  that I will be using a lot more geometry lights making them all compatible, but for now sit tight and listen to the other updates I have planned.
 
 * all environment support for (almost) all functions.  I am planning to utilize geometry to the best of my ability to make some of these avalible for all environments
-* classes for some functions with more params ie laserfeild. 
+* classes for some functions with more params ie laserfeild.
+* make the docs pretty!!!!
+* add some community made functions? (if people submit some lol)
+* organize functions
 
