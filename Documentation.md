@@ -20,6 +20,10 @@ import * as ml from './src/exports.ts'
 ```
 and that should do it for install, up next are the functions
 
+# Updating
+
+to update this package when another release comes out, simply delete the MapLock folder(S) and re - run `MapLock_setup` and that will give you the latest version!
+
 # Environment functions
 ### despawn
 ```ts
