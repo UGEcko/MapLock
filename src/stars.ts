@@ -17,6 +17,8 @@ export function stars(amount: number, individualSize: number, Distance: number, 
       stars.animate.definitePosition = rm.arrAdd(rm.rotatePoint(starRotation, [0, Distance, -individualSize / 2]), 0) as rm.Vec3;
       stars.animate.color = [1,1,1,1];
       stars.scale = [individualSize, individualSize, individualSize];
+      stars.fake = true;
+      stars.interactable = false;
       stars.push();
     }
   }
