@@ -9,7 +9,7 @@ Welcome to MapLock, a package (in beta) designed to make ReMapper environment st
 Example functions:
 
 ```ts
-import * as ml from './src/index.ts'
+import * as ml from './src/exports.ts'
 
 //moves the entire environment to -9999 on th y axis evectively despawning it
 ml.despawn("Environment", "Contains")
@@ -17,7 +17,7 @@ ml.despawn("Environment", "Contains")
 or 
 
 ```ts
-import * as ml from './src/index.ts''
+import * as ml from './src/exports.ts'
 
 //generates a feild of lasers with a given height and ammount
 ml.laserfeild(
