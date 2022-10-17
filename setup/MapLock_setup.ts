@@ -1,7 +1,6 @@
 import cloneTemplateToCache from "./clone.ts"; 
 import { configDir, path, fs } from "./deps.ts";
 
-
 const name = Deno.args[0] ?? "."
  
 const refIndex = Deno.args.findIndex(e => e === "--version" || e === "-v")
