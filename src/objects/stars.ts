@@ -6,7 +6,7 @@ import * as rm  from "https://deno.land/x/remapper@2.1.0/src/mod.ts"
 * @param Distance the distance between each star
 * @param Time the time to spawn the stars
 * @param duration how long the stars last
-* @author splashcard__
+* @author splashcard__ 
 */
 
 
