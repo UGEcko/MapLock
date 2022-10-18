@@ -110,8 +110,8 @@ This will move the player, but the exiting part is - no extra parent track neede
 import * as ml from './src/exports.ts'
 
 ml.stars(
-  160, //ammount
-  1, //individual size
+  350, //ammount
+  0.3, //individual size
   60, //distance
   0, //time
   100 //duration
