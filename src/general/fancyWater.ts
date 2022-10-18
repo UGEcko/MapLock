@@ -10,7 +10,7 @@ export function fancyWater(posY: number) {
     const env = new remapper.Environment("", "Regex")
     env.id = new remapper.Regex("PlayersPlace").separate().add("Mirror").end(),
     env.scale = [3000, 0.1, 3000];
-    env.position = [-1000, y, -1000];
+    env.position = [-1000, posY, -1000];
     env.duplicate = 1;
     env.push();
 }
