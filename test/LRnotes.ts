@@ -5,6 +5,8 @@ import * as rm from "https://deno.land/x/remapper@2.1.0/src/mod.ts"
 * @param duration the duration for the animation
 * @param leftNoteData the custom data for the left notes
 * @param rightNoteData the custom data for the right notes
+* @author splashcard__
+*/
 
 export function LRnotes(time, duration, leftNoteData, rightNoteData) {
     rm.notesBetween(time, duration, (note) => {
