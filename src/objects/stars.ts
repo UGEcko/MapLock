@@ -15,7 +15,7 @@ export function stars(amount: number, individualSize: number, Distance: number, 
       const starRotation: rm.Vec3 = [rm.rand(10, 360), rm.rand(10, 360), 0];
     
       stars.animate.definitePosition = rm.arrAdd(rm.rotatePoint(starRotation, [0, Distance, -individualSize / 2]), 0) as rm.Vec3;
-      stars.animate.color = [1,1,1,1];
+      stars.color = [1,1,1,1];
       stars.scale = [individualSize, individualSize, individualSize];
       stars.fake = true;
       stars.interactable = false;
