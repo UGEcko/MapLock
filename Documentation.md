@@ -88,30 +88,15 @@ allowRotation allows rotation of -20 - 20 on the x and z axis, IF you want the l
 * allowRotation = boolean
 
 # object statments
-### water
-```ts
-import * as ml from './src/exports.ts'
-
-ml.water(
-/*time*/ 69
-/*duration*/ 420
-/*height*/ -1.5
-)
-```
-
-This is pretty self explanitory, it makes a massive lake/ocean ~~so you can be like every other basic noodle mapper who uses copies swifter instead of making your own legitemate thing :)~~
-time = number
-duration = number
-y level = number
 
 ### player movment
 ```ts
 import * as ml from './src/exports.ts'
 
 ml.animatePlayer(
-   /*time*/ 0,
-   /*duration*/ 100,
-   /*position*/ [[0, 0, 0, 0], [0, 100, 0, 1, "easeStep"]]
+   0, //time
+   100, //duration
+   [[0, 0, 0, 0], [0, 100, 0, 1, "easeStep"]] //position animation
 )
 ```
 This will move the player, but the exiting part is - no extra parent track needed - this will move the player and the notes together!
