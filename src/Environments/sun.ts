@@ -1,4 +1,4 @@
-import * as remapper from "https://deno.land/x/remapper@2.1.0/src/mod.ts"
+import * as rm from "https://deno.land/x/remapper@2.1.0/src/mod.ts"
 
 /**
  * @param postion position to spawn the sun
@@ -7,8 +7,8 @@ import * as remapper from "https://deno.land/x/remapper@2.1.0/src/mod.ts"
  * @author splashcard__ respect the grind
  */
 
-export function sun(position: any, scale: number, lightID : number) {
-    const sun = new remapper.Geometry("Cylinder", {
+export function sun(position: array<number>, scale: number, lightID : number) {
+    const sun = new rm.Geometry("Cylinder", {
         _shader: "OpaqueLight"
     })
     sun.position = position;
