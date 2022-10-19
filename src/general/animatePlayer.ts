@@ -1,4 +1,4 @@
-import * as remapper from "https://deno.land/x/remapper@2.1.0/src/mod.ts"
+import * as rm from "https://deno.land/x/remapper@2.1.0/src/mod.ts"
 
 /**
  * @param position the position of the animate Track CAN USE MULTIPLE POINTS
@@ -8,12 +8,12 @@ import * as remapper from "https://deno.land/x/remapper@2.1.0/src/mod.ts"
 */
 
 export function playerMove(time: number, dur: number, position: any) {
-    const event = new remapper.CustomEvent(time).animateTrack("track", dur);
+    const event = new rm.CustomEvent(time).animateTrack("track", dur);
     event.animate.position = position;
     event.push();
-    new remapper.CustomEvent(time).assignTrackParent(["notes", "player"], "track")
-    new remapper.CustomEvent(time).assignPlayerToTrack("player").push();
-    remapper.notesBetween(time, dur, (note) => {
+    new rm.CustomEvent(time).assignTrackParent(["notes", "player"], "track")
+    new rm.CustomEvent(time).assignPlayerToTrack("player").push();
+    rm.notesBetween(time, dur, (note) => {
         note.customData = {
             _track: "notes"
         }
