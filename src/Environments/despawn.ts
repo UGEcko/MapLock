@@ -1,25 +1,25 @@
-// deno-lint-ignore-file no-explicit-any
-import * as rm from "https://deno.land/x/remapper@2.1.0/src/mod.ts"
+import * as remapper from "https://deno.land/x/remapper@2.1.0/src/mod.ts"
 
+// Swifter made this hard to work with D:
 /**
-* @param id the ID(S) to despawn
-* @param lookupMethod the method to look up the object (contains, regex, exact, startswith, or endswith)
-* @author splashcard__ im literally doing this in the middle of english class :)
-*/
+ * @param ID the environment ID to despawn
+ * @param lookupmethod the method to find the Environment peice to despawn
+ * @author splashcard__ Hi there 
+ */
 
-export function(lookupMethod: any, ID: string[]) {
+// deno-lint-ignore no-explicit-any
+export function despawn(ID: string, lookupmethod: any) { 
     switch(ID) {
         case "bts":
             ID = "BTSEnvironment.[0]Environment"
-            break
+        // deno-lint-ignore no-fallthrough
         case "billie":
             ID = "BillieEnvironment.[0]Environment"
         case "all":
             ID = "Environment"
     }
-    ID.forEach((object) => {
-        const despawn = new rm.Environment(`${object}`, `${lookupMethod}`)
-        despawn.position = [-69420, -69420, -69420];
-        despawn.push();
-  }
+
+    const env = new remapper.Environment(`${ID}`, lookupmethod);
+    env.position = [0, -9999, 0];
+    env.push();
 }
