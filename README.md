@@ -13,7 +13,9 @@ Example functions:
 import * as ml from './src/exports.ts'
 
 //moves the entire environment to -9999 on th y axis evectively despawning it
-ml.despawn("Environment", "Contains")
+ml.despawn("Contains", [
+    "Environment" // the thing to remove
+])
 ```
 or 
 
