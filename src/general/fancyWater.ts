@@ -6,7 +6,7 @@ import * as rm from "https://deno.land/x/remapper@2.1.0/src/mod.ts"
  *@author splashcard__ i should be studying right now
 */
 
-export function fancyWater(posY: number, pushMirrorQuality: boolean) {
+export function fancyWater(posY: number) {
     const env = new remapper.Environment("", "Regex")
     env.id = new remapper.Regex("PlayersPlace").separate().add("Mirror").end(),
     env.scale = [3000, 0.1, 3000];
