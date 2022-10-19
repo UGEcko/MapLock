@@ -1,4 +1,3 @@
-// deno-lint-ignore-file adjacent-overload-signatures no-explicit-any
 import * as rm from "https://deno.land/x/remapper@2.1.0/src/mod.ts"
 
 /**
@@ -8,7 +7,7 @@ import * as rm from "https://deno.land/x/remapper@2.1.0/src/mod.ts"
  * @author splashcard__ <-- no way!! 
  */
 
-export function clouds(position: array, scale: array, rotation: array) {
+export function clouds(position: array<number>, scale: array<number>, rotation: array<number>) {
     const clouds = new rm.Environment("HighCloudsGenerator$", "Regex")
     clouds.position = position;
     clouds.scale = scale;
