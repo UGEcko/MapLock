@@ -136,7 +136,7 @@ ml.noteFilter(
     [0, 0], // Position to Select
     { //Custom Data
         _position: [3, 3, 3]
-        _dissolve = [[1, 0], [0, 1]]
+        _dissolve: [[1, 0], [0, 1]]
     }
 )
 ```
@@ -161,7 +161,5 @@ importing this way will allow you to not prefix everything with mp. and you can 
 I'm exited to say, that sometime in the future when v3 modcharts are more relevant (v3 allows for geometry lighting)  that I will be using a lot more geometry lights making them all compatible, but for now sit tight and listen to the other updates I have planned.
 
 * all environment support for (almost) all functions.  I am planning to utilize geometry to the best of my ability to make some of these avalible for all environments
-* make the docs pretty!!!!
-* add some community made functions? (if people submit some lol)
 * organize functions✔️
 
