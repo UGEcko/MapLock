@@ -8,7 +8,7 @@ import * as rm from "https://deno.land/x/remapper@2.1.0/src/mod.ts"
 * @author splashcard__
 */
 
-export function LRnotes(time, duration, leftNoteData, rightNoteData) {
+export function LRnotes(time: number, duration: number, leftNoteData: any, rightNoteData: any) {
     rm.notesBetween(time, duration, (note) => {
       if(note.position === [0, 0] || [0, 1] || [0, 2] || [1, 0] || [1, 1] || [1, 2]) {
        note.customData = leftNoteData;
