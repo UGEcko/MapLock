@@ -18,8 +18,8 @@ export function(lookupMethod: any, ID: string[]) {
             ID = "Environment"
     }
     ID.forEach((object) => {
-    const despawn = new rm.Environment(`${object}`, `${lookupMethod}`)
-    despawn.position = [-69420, -69420, -69420];
-    despawn.push();
+        const despawn = new rm.Environment(`${object}`, `${lookupMethod}`)
+        despawn.position = [-69420, -69420, -69420];
+        despawn.push();
   }
 }
