@@ -60,5 +60,5 @@ export function LRnotes(time: number, duration: number, leftNoteData: any, right
         if(note.position === [3,2]) {
             note.customData= rightNoteData;
         }
-    }                  
+    },               
 }
