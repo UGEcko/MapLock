@@ -6,7 +6,7 @@ import * as rm from "https://deno.land/x/remapper@2.1.0/src/mod.ts"
 * @author splashcard__ im literally doing this in the middle of english class :)
 */
 
-export function(ID: Array<string>, lookupMethod: any) {
+export function(lookupMethod: any, ID: Array<string>) {
     switch(ID) {
         case "bts":
             ID = "BTSEnvironment.[0]Environment"
