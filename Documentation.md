@@ -2,7 +2,7 @@
 
 
 # Welcome
-Welcome to MapLock!  This is an awesome package for (mostly) environment ReMapper Statments, this also has other functions like animate tracks and other things made easier!  
+Welcome to MapLock!  This is a package for ReMapper Statments and utils, ~~this is definitely not a nootils clone~~
 
 This package is meant to be used with [ReMapper](https://github.com/Swifter1243/ReMapper)
 
