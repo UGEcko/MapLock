@@ -1,3 +1,4 @@
+// deno-lint-ignore-file adjacent-overload-signatures no-explicit-any
 import * as remapper from "https://deno.land/x/remapper@2.1.0/src/mod.ts"
 
 /**
@@ -14,6 +15,7 @@ export function sun(position: any, scale: number, lightID : number) {
     sun.position = position;
     sun.scale = [scale, scale, scale];
     sun.lightID = lightID;
+    sun.rotation = [90, 0, 0]
     sun.push();
 }
 
