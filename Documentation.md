@@ -169,6 +169,10 @@ ml.LRnotes(
 * LeftNoteCustomData = basically just like noodle scripting in js idk
 * RightNoteCustomData = basically just like noodle scripting in js idk
 
+### BLARGZ
+
+never ever ever ever call this, please, it will cause all of the lag, every lag all of the bright, brighter than tuzr maps, it will absolutely destroy the game until the frames stabilize 60 minutes later ;)
+
 # future
 
 I'm exited to say, that sometime in the future when v3 modcharts are more relevant (v3 allows for geometry lighting)  that I will be using a lot more geometry lights making them all compatible, but for now sit tight and listen to the other updates I have planned.
