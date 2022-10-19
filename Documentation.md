@@ -164,6 +164,10 @@ ml.LRnotes(
   _dissolve: [[0.8, 0], [0, 0.4]]
 )
 ```
+* time Start = number
+* Duration = number
+* LeftNoteCustomData = basically just like noodle scripting in js idk
+* RightNoteCustomData = basically just like noodle scripting in js idk
 
 # future
 
