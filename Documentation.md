@@ -30,8 +30,11 @@ to update this package when another release comes out, simply delete the MapLock
 ```ts
 import * as ml from './src/exports.ts'
 
-//despawns the whole BTS environment
-ml.despawn("bts", "Contains")
+//despawns the left and right pannel of the billie hud using contains
+ml.yeet("Contains", [
+  "BillieEnvironment.[0]Environment.[2]NarrowGameHUD.[2]RightPanel",
+  "BillieEnvironment.[0]Environment.[2]NarrowGameHUD.[1]LeftPanel"
+])
 ```
 Despwan is extremely simple, it just takes the entirety of the bts environment and moves it way out of the player's sight, essentially despawning the environment
 despwan() has two constants for environments `"bts"` or `"billie"` removing the entirety of their respective environments, you can also use your own custom ids and different lookup methods if you so desire, `"bts"` and `"billie"` will only work with contains.
@@ -47,7 +50,7 @@ ml.sun(
    21 //lightID
 )
 ```
-this will use `Geometry` to make a sun effect with customizable scale, position and lightID
+this will use `Geometry` to make a sun effect with customizable scale, position and lightID, __requres v3 to light__  
 * position = array
 * scale = array
 * lightID = integer
@@ -146,15 +149,21 @@ ml.noteFilter(
 * position  = array
 * CustomData = basically just like noodle scripting in js idk
 
-# the entire other way you could do this
+### LRnotes
 
 ```ts
-import {despawn, laserfeild} from './src/exports.ts'
+import * as ml from './src/exports.ts'
 
-despawn("billie", "Contains")
+ml.LRnotes(
+  0, //time
+  100, //duration
+  {// left note custom data
+  _dissolve: [[0, 0], [0.8, 0.4]]
+  }
+  {// right note custom data
+  _dissolve: [[0.8, 0], [0, 0.4]]
+)
 ```
-
-importing this way will allow you to not prefix everything with mp. and you can just use functions without worrying about prefixes, that said - prefixing will allow you to see what this package has to offer.  If you'd like you can type `mp.` and vsc will autofill all of your options for you.  You will see each function that you can call at that time.  It is completely up to you which way you import, they both have their pros and cons but i would personnaly reccomend prefixing for this package as there as it is meant as an addon to rm and you probably wont be using a ton within your script.
 
 # future
 
