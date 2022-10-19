@@ -1,4 +1,4 @@
-// deno-lint-ignore-file adjacent-overload-signatures no-explicit-any
+// deno-lint-ignore-file no-explicit-any
 import * as rm from "https://deno.land/x/remapper@2.1.0/src/mod.ts"
 
 /**
@@ -7,7 +7,7 @@ import * as rm from "https://deno.land/x/remapper@2.1.0/src/mod.ts"
 * @author splashcard__ im literally doing this in the middle of english class :)
 */
 
-export function(lookupMethod: any, ID: Array<string>) {
+export function(lookupMethod: any, ID: string[]) {
     switch(ID) {
         case "bts":
             ID = "BTSEnvironment.[0]Environment"
