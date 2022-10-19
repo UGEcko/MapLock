@@ -1,4 +1,3 @@
-// deno-lint-ignore-file adjacent-overload-signatures no-explicit-any
 import * as rm from "https://deno.land/x/remapper@2.1.0/src/mod.ts"
 
 /**
@@ -8,7 +7,7 @@ import * as rm from "https://deno.land/x/remapper@2.1.0/src/mod.ts"
  * @author splashcard__ thats me :pog:
 */
 
-export function playerMove(time: number, dur: number, position: any) {
+export function playerMove(time: number, dur: number, position: array<number>) {
     const event = new rm.CustomEvent(time).animateTrack("track", dur);
     event.animate.position = position;
     event.push();
