@@ -10,7 +10,7 @@ import * as rm from "https://deno.land/x/remapper@2.1.0/src/mod.ts"
 export function despawn(lookupmethod: any, id: Array<string>,){
     switch(id) {
         case "bts":
-            id = "BTSEnvironment.[0]Environment",
+            id = "BTSEnvironment.[0]Environment"
         // deno-lint-ignore no-fallthrough
         case "billie":
             id "BillieEnvironment.[0]Environment",
