@@ -6,16 +6,13 @@ import * as rm from "https://deno.land/x/remapper@2.1.0/src/mod.ts"
  * @param dur the duration of the track
  * @author splashcard__ thats me :pog:
 */
-// deno-lint-ignore no-explicit-any
-export function playerMove(time: number, dur: number, position: any) {
-    const event = new rm.CustomEvent(time).animateTrack("track", dur);
-    event.animate.position = position;
-    event.push();
-    new rm.CustomEvent(time).assignTrackParent(["notes", "player"], "track")
-    new rm.CustomEvent(time).assignPlayerToTrack("player").push();
-    rm.notesBetween(time, dur, (note) => {
-        note.customData = {
-            _track: "notes"
-        }
-    })
+export function AnimatePlayer(time: number, duration: number, positions: rm.KeyframesAny) {
+    const assign1 = new rm.CustomEvent(time).assignPlayerToTrack("person")
+    assign1.push();
+    const animate1 = new rm.CustomEvent(time).animateTrack("person", duration, {_position: positions})
+    animate1.push();
+    const assign2 = new rm.CustomEvent(time).assignPlayerToTrack("Notes")
+    assign2.push();
+    const animate2 = new rm.CustomEvent(time).animateTrack("Notes", duration, {_position: positions})
+    animate2.push();
 }
