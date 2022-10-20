@@ -36,7 +36,7 @@ ml.yeet("Contains", [
   "BillieEnvironment.[0]Environment.[2]NarrowGameHUD.[1]LeftPanel"
 ])
 ```
-Despwan is extremely simple, it just takes the entirety of the bts environment and moves it way out of the player's sight, essentially despawning the environment object.  use your own custom ids and different lookup methods if you so desire.
+Despwan is extremely simple, it just takes the entirety of the bts environment and moves it way out of the player's sight, essentially despawning the environment object.  Small hint - if you want to remove the whole environment just use `"Contains"`and `"Environment"` ;)
 
 ### sun
 
@@ -49,7 +49,7 @@ ml.sun(
    21 //lightID
 )
 ```
-this will use `Geometry` to make a sun effect with customizable scale, position and lightID, __requres v3 to light__  
+this will use `Geometry` to make a sun effect with customizable scale, position and lightID, __requres v3 to light__
 * position = array
 * scale = array
 * lightID = integer
@@ -150,6 +150,21 @@ ml.noteFilter(
 * position  = array
 * CustomData = basically just like noodle scripting in js idk
 
+# misc
+
+### Screen Shake
+```ts
+import * as ml from './src/exports.ts'
+
+ml.screenShake(
+  0, //time
+  10 //duration
+)
+```
+a very basic screen shaking effect, moves the player small ammounts at a time very quickly.  An update is planned where you can chose intensity and the duration wont effct the intensity, but for now you can have this very very basic screen shake effect.
+
+* time = number
+* duration = number
 
 
 # future
@@ -157,5 +172,5 @@ ml.noteFilter(
 I'm exited to say, that sometime in the future when v3 modcharts are more relevant (v3 allows for geometry lighting)  that I will be using a lot more geometry lights making them all compatible, but for now sit tight and listen to the other updates I have planned.
 
 * all environment support for (almost) all functions.  I am planning to utilize geometry to the best of my ability to make some of these avalible for all environments
-* organize functions✔️
+* more object functions
 
