@@ -6,7 +6,7 @@ import * as rm from "https://deno.land/x/remapper@2.1.0/src/mod.ts"
  * @param dur the duration of the track
  * @author splashcard__ thats me :pog:
 */
-export function AnimatePlayer(time: number, duration: number, positions: rm.KeyframesAny) {
+export function animatePlayer(time: number, duration: number, positions: rm.KeyframesAny) {
     const assign1 = new rm.CustomEvent(time).assignPlayerToTrack("person")
     assign1.push();
     const animate1 = new rm.CustomEvent(time).animateTrack("person", duration, {_position: positions})
