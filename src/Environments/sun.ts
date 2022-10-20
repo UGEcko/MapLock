@@ -6,8 +6,8 @@ import * as rm from "https://deno.land/x/remapper@2.1.0/src/mod.ts"
  * @param lightID the ID to light the sun
  * @author splashcard__ respect the grind
  */
-
-export function sun(position: array<number>, scale: number, lightID : number) {
+// deno-lint-ignore no-explicit-any
+export function sun(position: any, scale: number, lightID : number) {
     const sun = new rm.Geometry("Cylinder", {
         _shader: "OpaqueLight"
     })
