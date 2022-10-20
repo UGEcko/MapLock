@@ -12,7 +12,7 @@ export function sun(position: array<number>, scale: number, lightID : number) {
         _shader: "OpaqueLight"
     })
     sun.position = position;
-    sun.scale = [scale, scale, scale];
+    sun.scale = [scale, scale, 0.3];
     sun.lightID = lightID;
     sun.rotation = [90, 0, 0]
     sun.push();
