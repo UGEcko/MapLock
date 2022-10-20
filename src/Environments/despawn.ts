@@ -1,4 +1,4 @@
-import * as remapper from "https://deno.land/x/remapper@2.1.0/src/mod.ts"
+import * as rm from "https://deno.land/x/remapper@2.1.0/src/mod.ts"
 
 // Swifter made this hard to work with D:
 /**
@@ -11,7 +11,7 @@ import * as remapper from "https://deno.land/x/remapper@2.1.0/src/mod.ts"
 export function despawn(ID: string, lookupmethod: any) { 
     
 
-    const env = new remapper.Environment(`${ID}`, lookupmethod);
+    const env = new rm.Environment(`${ID}`, lookupmethod);
     env.position = [0, -9999, 0];
     env.push();
 }
@@ -28,7 +28,7 @@ export function despawn(lookupmethod: any, id: Array<string>,){
     }
     
   id.forEach((object) =>{
-        const remove = new remapper.Environment(object, lookupmethod);
+        const remove = new rm.Environment(object, lookupmethod);
         remove.position = [-69420,-69420,-69420];
         remove.push();
     });
