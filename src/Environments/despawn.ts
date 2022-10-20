@@ -8,18 +8,19 @@ import * as rm from "https://deno.land/x/remapper@2.1.0/src/mod.ts"
  */
 // deno-lint-ignore no-explicit-any
 export function despawn(lookupmethod: any, id: Array<string>,){
+    let id = "Environment"
     switch(id) {
         case "bts":
-            id = "BTSEnvironment.[0]Environment";
+            id = "BTSEnvironment.[0]Environment"
         // deno-lint-ignore no-fallthrough
         case "billie":
-            id "BillieEnvironment.[0]Environment";
+            id "BillieEnvironment.[0]Environment"
         case "all":
-            id = "Environment";
+            id = "Environment"
     }
     
   id.forEach((object) => {
-        const remove = new rm.Environment(object, lookupmethod);
+        const remove = new rm.Environment(object, lookupmethod)
         remove.position = [-69420,-69420,-69420];
         remove.push();
     });
