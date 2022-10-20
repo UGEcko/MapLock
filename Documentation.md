@@ -15,11 +15,11 @@ then just run
 ```powershell
 MapLock_setup
 ```
-that should download the files for you, now to import add this to your imports list
+that will download the files for you, now to import add this to your imports list
 ```ts
 import * as ml from './src/exports.ts'
 ```
-and that should do it for install, up next are the functions
+and that should do it for install, It may show an error inside the src folderr, I have literally no idea shy this happens but just close and re-open vsc and you will be good to go.
 
 # Updating
 
