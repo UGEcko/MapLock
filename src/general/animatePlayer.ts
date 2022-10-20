@@ -6,8 +6,8 @@ import * as rm from "https://deno.land/x/remapper@2.1.0/src/mod.ts"
  * @param dur the duration of the track
  * @author splashcard__ thats me :pog:
 */
-
-export function playerMove(time: number, dur: number, position: array<number>) {
+// deno-lint-ignore no-explicit-any
+export function playerMove(time: number, dur: number, position: any) {
     const event = new rm.CustomEvent(time).animateTrack("track", dur);
     event.animate.position = position;
     event.push();
