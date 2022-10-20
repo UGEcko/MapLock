@@ -133,12 +133,14 @@ Spawns a sphere of stars around the player using walls (could cause small ammoun
 import * as ml from './src/exports.ts'
 
 ml.noteFilter(
-    21, //Time Start
-    21, //Duration
-    [0, 0], // Position to Select
-    { //Custom Data
-        _position: [3, 3, 3]
-        _dissolve: [[1, 0], [0, 1]]
+    0, //time start
+    100, //duration
+    [//positions to select
+        [0, 0],
+        [0, 1]
+    ],
+    {//custom data feild
+        _dissolve: [[0, 0], [1, 0.4]]
     }
 )
 ```
