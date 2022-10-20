@@ -31,5 +31,5 @@ export function despawn(lookupmethod: any, id: Array<string>,){
         const remove = new remapper.Environment(object, lookupmethod);
         remove.position = [-69420,-69420,-69420];
         remove.push();
-    })
+    });
 }
