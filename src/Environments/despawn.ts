@@ -7,17 +7,8 @@ import * as rm from "https://deno.land/x/remapper@2.1.0/src/mod.ts"
  * @author splashcard__ Hi there 
  */
 // deno-lint-ignore no-explicit-any
-export function despawn(lookupmethod: any, id: Array<string>,){
-    let id = "Environment"
-    switch(id) {
-        case "bts":
-            id = "BTSEnvironment.[0]Environment"
-        // deno-lint-ignore no-fallthrough
-        case "billie":
-            id "BillieEnvironment.[0]Environment"
-        case "all":
-            id = "Environment"
-    }
+export function despawn(lookupmethod: any, id: Array<string>,) {
+    let id = "Environment";
     
   id.forEach((object) => {
         const remove = new rm.Environment(object, lookupmethod)
