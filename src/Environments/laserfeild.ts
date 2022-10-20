@@ -1,4 +1,4 @@
-import * as remapper from "https://deno.land/x/remapper@2.1.0/src/mod.ts"
+import * as rm from "https://deno.land/x/remapper@2.1.0/src/mod.ts"
 
 /**
  * @param height the height to spawn the lasers at
@@ -14,8 +14,8 @@ export function laserfeild(height: number, IDmin: number, ammount:number, allowR
     const z = (Math.random() * (60)) - 30
     const rot = (Math.random() * (40)) - 20
     const rot2 = (Math.random() * (40)) - 20
-    const geo = new remapper.Geometry("Cube", {
-      _shader: "OpaqueLight"
+    const geo = new rm.Geometry("Cube", {
+      _shader: "TransparentLight"
     })
     geo.position = [x, height, z];
     geo.lightID = IDmin;
