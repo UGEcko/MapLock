@@ -10,8 +10,8 @@ import * as remapper from "https://deno.land/x/remapper@2.1.0/src/mod.ts"
 
 export function laserfeild(height: number, IDmin: number, ammount:number, allowRotation: boolean) {
   for(let i = 1; i < ammount; i++) {
-    const x = (Math.random() * (40)) - 20
-    const z = (Math.random() * (40)) - 20
+    const x = (Math.random() * (60)) - 30
+    const z = (Math.random() * (60)) - 30
     const rot = (Math.random() * (40)) - 20
     const rot2 = (Math.random() * (40)) - 20
     const geo = new remapper.Geometry("Cube", {
@@ -19,6 +19,7 @@ export function laserfeild(height: number, IDmin: number, ammount:number, allowR
     })
     geo.position = [x, height, z];
     geo.lightID = IDmin;
+    geo.scale = [0.05, 100, 0.05]
     if (allowRotation === true) {
       geo.rotation = [rot, 0, rot2];
     }
