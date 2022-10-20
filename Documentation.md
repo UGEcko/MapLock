@@ -96,9 +96,9 @@ allowRotation allows rotation of -20 - 20 on the x and z axis, IF you want the l
 import * as ml from './src/exports.ts'
 
 ml.animatePlayer(
-   0, //time
-   100, //duration
-   [[0, 0, 0, 0], [0, 100, 0, 1, "easeStep"]] //position animation
+    0, //time
+    100, //duration
+    [[0, 0, 0, 0], [0, 100, 0, "easeInOutElastic"]]//position animation but please never use this one lol
 )
 ```
 This will move the player, but the exiting part is - no extra parent track needed - this will move the player and the notes together!
@@ -150,29 +150,7 @@ ml.noteFilter(
 * position  = array
 * CustomData = basically just like noodle scripting in js idk
 
-### LRnotes
 
-```ts
-import * as ml from './src/exports.ts'
-
-ml.LRnotes(
-  0, //time
-  100, //duration
-  {// left note custom data
-  _dissolve: [[0, 0], [0.8, 0.4]]
-  }
-  {// right note custom data
-  _dissolve: [[0.8, 0], [0, 0.4]]
-)
-```
-* time Start = number
-* Duration = number
-* LeftNoteCustomData = basically just like noodle scripting in js idk
-* RightNoteCustomData = basically just like noodle scripting in js idk
-
-### BLARGZ
-
-never ever ever ever call this, please, it will cause all of the lag, every lag all of the bright, brighter than tuzr maps, it will absolutely destroy the game until the frames stabilize 60 minutes later ;)
 
 # future
 
