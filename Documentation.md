@@ -36,8 +36,7 @@ ml.yeet("Contains", [
   "BillieEnvironment.[0]Environment.[2]NarrowGameHUD.[1]LeftPanel"
 ])
 ```
-Despwan is extremely simple, it just takes the entirety of the bts environment and moves it way out of the player's sight, essentially despawning the environment
-despwan() has two constants for environments `"bts"` or `"billie"` removing the entirety of their respective environments, you can also use your own custom ids and different lookup methods if you so desire, `"bts"` and `"billie"` will only work with contains.
+Despwan is extremely simple, it just takes the entirety of the bts environment and moves it way out of the player's sight, essentially despawning the environment object.  use your own custom ids and different lookup methods if you so desire.
 
 ### sun
 
