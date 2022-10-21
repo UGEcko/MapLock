@@ -1,6 +1,7 @@
 export * from './Environments/clouds.ts'
 export * from './Environments/despawn.ts'
 export * from './Environments/lightPillar.ts'
+export * from './Environments/mountains.ts'
 export * from './Environments/sun.ts'
 export * from './general/animatePlayer.ts'
 export * from './general/LRnotes.ts'
