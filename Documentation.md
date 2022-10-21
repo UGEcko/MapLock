@@ -91,20 +91,6 @@ allowRotation allows rotation of -20 - 20 on the x and z axis, IF you want the l
 
 # object statments
 
-### player movment
-```ts
-import * as ml from './src/exports.ts'
-
-ml.animatePlayer(
-    0, //time
-    100, //duration
-    [[0, 0, 0, 0], [0, 100, 0, "easeInOutElastic"]]//position animation but please never use this one lol
-)
-```
-This will move the player, but the exiting part is - no extra parent track needed - this will move the player and the notes together!
-* time = number
-* duration = number
-* position = array
 
 ### stars
 
@@ -112,9 +98,9 @@ This will move the player, but the exiting part is - no extra parent track neede
 import * as ml from './src/exports.ts'
 
 ml.stars(
-  350, //ammount
-  0.3, //individual size
-  60, //distance
+  580, //ammount
+  0.2, //individual size
+  100, //distance
   0, //time
   100 //duration
 )
@@ -127,6 +113,10 @@ Spawns a sphere of stars around the player using walls (could cause small ammoun
 * distance (the distance between eac star) = number
 * time (the time to spawn the stars) = number
 * duration (the duration the stars will last) = number
+
+
+# misc
+
 
 ### NoteFilter
 ```ts
@@ -150,27 +140,49 @@ ml.noteFilter(
 * position  = array
 * CustomData = basically just like noodle scripting in js idk
 
-# misc
 
-### Screen Shake
+### player movment
 ```ts
 import * as ml from './src/exports.ts'
 
-ml.screenShake(
-  0, //time
-  10 //duration
+ml.animatePlayer(
+    0, //time
+    100, //duration
+    [[0, 0, 0, 0], [0, 100, 0, "easeInOutElastic"]]//position animation but please never use this one lol
 )
 ```
-a very basic screen shaking effect, moves the player small ammounts at a time very quickly.  An update is planned where you can chose intensity and the duration wont effct the intensity, but for now you can have this very very basic screen shake effect.
+This will move the player, but the exiting part is - no extra parent track needed - this will move the player and the notes together!
+* time = number
+* duration = number
+* position = array
+
+### LRnotes
+
+```ts
+import * as ml from './src/exports.ts'
+
+ml.LRnotes(
+    0, //time
+    100, //duration
+    { //left note customData
+        _dissolve: [[0, 0], [1, 0.5]]
+    },
+    { //right note customData
+        _dissolve: [[1, 0], [0, 1]]
+    }
+)
+```
+LRnotes filters the left and the right notes so you can make path animations easier or anything else if you want to,
 
 * time = number
 * duration = number
-
+* left note customData = basically just like noodle scripting in js idk
+* right note customData = basically just like noodle scripting in js idk
 
 # future
 
 I'm exited to say, that sometime in the future when v3 modcharts are more relevant (v3 allows for geometry lighting)  that I will be using a lot more geometry lights making them all compatible, but for now sit tight and listen to the other updates I have planned.
 
 * all environment support for (almost) all functions.  I am planning to utilize geometry to the best of my ability to make some of these avalible for all environments
-* more object functions
+* more object functions!!!
 
