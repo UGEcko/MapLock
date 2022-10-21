@@ -7,7 +7,7 @@ import * as rm from "https://deno.land/x/remapper@2.1.0/src/mod.ts"
 */
 
 export function mountains(height: number, rotation: number) {
-    const mtn = new Environment("BillieEnvironment.[0]Environment.[12]Mountains", "Exact");
+    const mtn = new rm.Environment("BillieEnvironment.[0]Environment.[12]Mountains", "Exact");
     mtn.position = [0, height, 0];
     mtn.rotation = [0, rotation, 0];
     mtn.push();
