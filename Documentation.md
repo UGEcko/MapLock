@@ -46,13 +46,15 @@ import * as ml from './src/exports.ts'
 ml.sun(
    [0, 10, 30], //position
    [1, 1.5, 1], //scale
-   21 //lightID
+   21 //lightID,
+   "billie" //environment to use
 )
 ```
-this will use `Geometry` to make a sun effect with customizable scale, position and lightID, __requres v3 to light__
+a sun with customizable scale and positon the environment to use could be "billie" which spawns the billie sun or "universal" which uses geometry which __requires v3 to light__
 * position = array
 * scale = array
 * lightID = integer
+* environment = string
 
 ### clouds
 ```ts
@@ -68,6 +70,31 @@ ml.clouds(
 * position = array
 * rotation = array
 * scale = array
+
+### rain
+
+```ts 
+import * as ml from './src/exports.ts'
+
+ml.rain(21) //the light id cuz you can light rain for whatever reason
+```
+rain literallyu just makes __envrionment specific__ billie rain
+
+* lightID = integer
+
+### mountains
+```ts
+import * as ml from './src/exports.ts'
+
+ml.mountains(
+  0, //height
+  0, //y axis rotation
+)
+```
+mountains spawns the mountains from the billie environment at any y level with customizable y axis rotation
+
+* height = number
+* rotation = number
 
 ### laserfeild
 ```ts
