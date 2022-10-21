@@ -11,5 +11,6 @@ export function lightPillar(position: rm.KeyframesAny, lightID: number){
   const pillar = new rm.Environment("MagicDoorSprite", "EndsWith")
   pillar.scale = [0, 100, 0];
   pillar.position = position;
+  pillar.lightID = lightID;
   pillar.push();
 }
