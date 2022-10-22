@@ -31,7 +31,7 @@ to update this package when another release comes out, simply delete the MapLock
 import * as ml from './src/exports.ts'
 
 //despawns the left and right pannel of the billie hud using contains
-ml.yeet("Contains", [
+ml.despawn("Contains", [
   "BillieEnvironment.[0]Environment.[2]NarrowGameHUD.[2]RightPanel",
   "BillieEnvironment.[0]Environment.[2]NarrowGameHUD.[1]LeftPanel"
 ])
