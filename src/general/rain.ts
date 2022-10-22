@@ -7,7 +7,7 @@ import * as rm from "https://deno.land/x/remapper@2.1.0/src/mod.ts"
 */
 
 export function rain(lightID: number) {
-    const rain = new rm.Environment("BillieEnvironment.[0]Environment.[24]Rain", "Exact")
+    const rain = new rm.Environment("Rain", "EndsWith")
     rain.lightID = lightID;
     rain.push();
 }
