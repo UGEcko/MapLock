@@ -1,7 +1,7 @@
-import * as rm from '
+import * as rm from "https://deno.land/x/remapper@2.1.0/src/mod.ts"
 
 /**
-* unfortunaltely specific to billie envieonment :(
+* unfortunaltely specific to billie envieonment D:
 * @param lightID the id so you can light up the rain, why does this work? idk
 * @author splashcard__
 */
