@@ -25,7 +25,6 @@ jobs:
       with:
         deno-version: vx.x.x
 
-    - uses: actions/cache@v3
       with:
         path: ${{ env.DENO_DIR }}
         key: ${{ runner.os }}-node-${{ hashFiles('**/deps.ts') }}
@@ -42,4 +41,4 @@ jobs:
       continue-on-error: true
 
     - name: Build Deno Module
-      run: deno run --allow-read --allow-write --reload src/mod.ts 
+      run: deno run --allow-read --allow-write --reload src/exports.ts 
