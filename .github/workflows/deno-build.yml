@@ -24,14 +24,7 @@ jobs:
       uses: denoland/setup-deno@v1
       with:
         deno-version: vx.x.x
-
-      with:
-        path: ${{ env.DENO_DIR }}
-        key: ${{ runner.os }}-node-${{ hashFiles('**/deps.ts') }}
-        restore-keys: |
-          ${{ runner.os }}-node-
-    # Scan the code for syntax errors and style issues. If
-    # you want to use a custom linter configuration you can add a configuration file with --config <myconfig>
+        
     - name: Deno Lint
       run: deno lint
       continue-on-error: true
@@ -41,4 +34,6 @@ jobs:
       continue-on-error: true
 
     - name: Build Deno Module
-      run: deno run --allow-read --allow-write --reload src/exports.ts 
+      run: deno run --allow-read --allow-write --reload src/mod.ts 
+
+
