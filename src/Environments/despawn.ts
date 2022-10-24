@@ -9,7 +9,7 @@ import * as rm from "https://deno.land/x/remapper@2.1.0/src/mod.ts"
 
 
 export function despawn(lookupmethod: rm.LOOKUP, ID: Array<string>){
-    id.forEach((object) =>{
+    ID.forEach((object) =>{
         const remove = new rm.Environment(object, lookupmethod);
         remove.position = [-69420,-69420,-69420];
         remove.push();
