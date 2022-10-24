@@ -34,6 +34,6 @@ jobs:
       continue-on-error: true
 
     - name: Build Deno Module
-      run: deno run --allow-read --allow-write --reload src/mod.ts 
+      run: deno run --allow-read --allow-write --reload src/exports.ts
 
 
