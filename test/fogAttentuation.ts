@@ -9,8 +9,8 @@ import * as rm from "https://deno.land/x/remapper@2.1.0/src/mod.ts"
 */
 
 export function fogAttentuation(time: number, duration: number, animateAttentuation: KeyframesLinear) {
-    const fog = new CustomEvent(time).animateTrack("fog");
+    const fog = new rm.CustomEvent(time).animateTrack("fog");
     fog.animate.attenuation = animateAttentuation;
-    animTrack.duration = duration;
-    animTrack.push();
+    fog.duration = duration;
+    fog.push();
 }
