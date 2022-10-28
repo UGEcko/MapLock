@@ -9,11 +9,12 @@ import * as rm from "https://deno.land/x/remapper@2.1.0/src/mod.ts"
 */
 
 // deno-lint-ignore no-explicit-any
-export function noteFilter(timeStart: number, duration: number, customData: any, positions: any) {
+export function noteFilter(timeStart: number, duration: number, customData: any, lineIndex: number, lineLayer: number) {
     rm.notesBetween(timeStart, duration, (note) => {
         positions.forEach((position: [number,number, (boolean|undefined)?]) => {
-            if(note.position === position) {
+            if(note.position[0] === lineIndex && note.position[1] === lineLayer) {
                 note.customData = customData
+                note.push();
             }
         })
     })
