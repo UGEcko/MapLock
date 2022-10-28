@@ -11,9 +11,11 @@ export function LRnotes(time: number, duration: number, leftNoteData: any, right
   rm.notesBetween(time, duration, (note) => {
     if(note.type === 0) {
       note.customData = leftNoteData;
+      note.push();
     }
     if(note.type === 1) {
       note.customData = rightNoteData;
+      note.push();
     }
   })
 }
