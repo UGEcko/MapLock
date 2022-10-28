@@ -152,10 +152,8 @@ import * as ml from './src/exports.ts'
 ml.noteFilter(
     0, //time start
     100, //duration
-    [//positions to select
-        [0, 0],
-        [0, 1]
-    ],
+    1, //lineIndex
+    1, //lineLayer
     {//custom data feild
         _dissolve: [[0, 0], [1, 0.4]]
     }
