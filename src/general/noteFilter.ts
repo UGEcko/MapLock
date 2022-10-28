@@ -1,21 +1,19 @@
 import * as rm from "https://deno.land/x/remapper@2.1.0/src/mod.ts"
 
 /**
-* @param timeStart the time your track will start
-* @param Duration the duration of your track
-* @param position the position to select
+* @param timeStart the start of the time frame you to filter out
+* @param timeEnd the end of the time frame you filter out
+* @param lineIL [lineIndex, lineLayer] format in an array
 * @param customData just format this like you would normal noodle scripting
 * @author splashcard__ <-- bro that guy is like famous
 */
 
 // deno-lint-ignore no-explicit-any
-export function noteFilter(timeStart: number, duration: number, customData: any, lineIndex: number, lineLayer: number) {
-    rm.notesBetween(timeStart, duration, (note) => {
-        positions.forEach((position: [number,number, (boolean|undefined)?]) => {
-            if(note.position[0] === lineIndex && note.position[1] === lineLayer) {
+export function noteFilter(timeStart: number, timeEnd: number, customData: any, lineIL: number[]) {
+    rm.notesBetween(timeStart, timeEnd, (note) => {
+            if(note.position[0] === lineIL[0] && note.position[1] === lineIL[1]) {
                 note.customData = customData
                 note.push();
             }
-        })
     })
 }
